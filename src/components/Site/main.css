@@ -1,0 +1,520 @@
+/**
+ * Import SASS 
+ * Combining files into one, adds them in sequence
+ */
+/**
+ * Global Variables
+ */
+/* Breakpoint Screen Sizes */
+/* Breakpoint Font Root Sizes */
+/* Colors */
+/* Official Social Media Colors */
+/* Fonts */
+/**
+ * Mixins
+ */
+/**
+ * Media Queries
+ */
+/**
+ * hoverTouch.js implementation
+ */
+/**
+ * Convert pixel sizes to REM
+ * @arg  {string}  $pixels  The pixel size to convert to REM
+ * @arg  {string}  $root    The root size to convert by
+ * @return  {string}  the calculated REM size
+ */
+/**
+ * Convert pixel sizes to VW
+ * @arg  {string}  $pixels  The pixel size to convert to REM
+ * @arg  {string}  $width   The width to convert by
+ * @return  {string}  the calculated VW size
+ */
+/**
+ * Custom Scrollbar Styling
+ * @param  {integer} $size       Enter in the increments for size of the scrollbar
+ *                               EX: ".5em"
+ * @param  {string}  $primary    Enter in the color desired for the primary color
+ * @param  {string}  $secondary  Enter in the color desired for the secondary color
+ */
+/**
+ * Imports
+ * Add external files into combined sass file
+ */
+/**
+ * Keyframe Animations
+ */
+@keyframes show {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -2; }
+  1% {
+    z-index: 3; }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3; }
+  99% {
+    z-index: 3; }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -2; } }
+
+@keyframes rotateClockwise {
+  100% {
+    transform: rotate(360deg); } }
+
+/**
+ * Global
+ */
+html, body {
+  font-size: 16px; }
+  @media only screen and (min-width: 320px) {
+    html, body {
+      font-size: 2.13333vw; } }
+  @media only screen and (min-width: 751px) {
+    html, body {
+      font-size: 0.94488vw; } }
+  @media only screen and (min-width: 1271px) {
+    html, body {
+      font-size: 0.625vw; } }
+  @media only screen and (min-width: 1601px) {
+    html, body {
+      font-size: 10px; } }
+
+.Site {
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+body {
+  background-color: #000; }
+
+.Nav {
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  display: table;
+  vertical-align: top;
+  width: 100%;
+  max-width: 19.375rem; }
+  @media only screen and (min-width: 751px) {
+    .Nav {
+      max-width: 104.16667rem; } }
+  @media only screen and (min-width: 1271px) {
+    .Nav {
+      max-width: 156rem; } }
+
+.NavLogo {
+  float: left;
+  background-color: #000;
+  color: #FFF;
+  font-size: 7.6rem;
+  padding: 1.5rem 2.5rem;
+  margin-left: 19rem; }
+
+.NavButtons {
+  float: right;
+  background-color: #000;
+  color: #FFF;
+  display: table;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2.5rem;
+  margin-right: 1rem; }
+
+.NavBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+  font-size: 1.125rem;
+  padding: 0 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .NavBtn {
+      font-size: 1.5rem;
+      padding: 0 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .NavBtn {
+      font-size: 3.6rem;
+      padding: 0 1rem; } }
+
+.SocialBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+  font-size: 1.125rem;
+  padding: 0 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .SocialBtn {
+      font-size: 1.5rem;
+      padding: 0 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .SocialBtn {
+      font-size: 3.6rem;
+      padding: 0 1rem; } }
+
+.ScreenReaderText {
+  /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.NavButtons a:link {
+  color: #fff;
+  text-decoration: none; }
+
+.NavButtons a:visited {
+  color: #FFF;
+  text-decoration: none; }
+
+.NavButtons a:hover {
+  color: #FFF;
+  text-decoration: underline; }
+
+.NavButtons a:active {
+  color: #FFF;
+  text-decoration: none; }
+
+@keyframes navRest {
+  to {
+    color: #000; } }
+
+@keyframes navRoll {
+  to {
+    color: #333; } }
+
+.img {
+  width: 100%;
+  height: auto; }
+
+.Header {
+  background-color: #fff;
+  margin-bottom: 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .Header {
+      margin-bottom: 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .Header {
+      margin-bottom: 1rem; } }
+
+.Header, .HeaderHolder, .HeaderVideo, .HeaderMask {
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .Header, .HeaderHolder, .HeaderVideo, .HeaderMask {
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .Header, .HeaderHolder, .HeaderVideo, .HeaderMask {
+      width: 160rem;
+      height: 64.3rem; } }
+
+.HeaderHolder {
+  position: relative;
+  color: white;
+  overflow: hidden; }
+
+.HeaderVideo {
+  position: absolute; }
+
+.HeaderMask {
+  position: absolute; }
+
+.HeaderBack {
+  fill: #FFF;
+  width: 100rem;
+  height: 56.25rem; }
+  @media only screen and (min-width: 751px) {
+    .HeaderBack {
+      width: 133.33333rem;
+      height: 75rem; } }
+  @media only screen and (min-width: 1271px) {
+    .HeaderBack {
+      width: 160rem;
+      height: 90rem; } }
+
+.HeaderRect {
+  transform: rotate(45deg) translate(-50rem, -59.375rem);
+  fill: #eff3f6;
+  width: 100rem;
+  height: 56.25rem; }
+  @media only screen and (min-width: 751px) {
+    .HeaderRect {
+      width: 133.33333rem;
+      height: 75rem; } }
+  @media only screen and (min-width: 1271px) {
+    .HeaderRect {
+      width: 174.5rem;
+      height: 174.5rem; } }
+
+.HeaderRectTop {
+  transform: rotate(45deg) translate(-50rem, -59.375rem);
+  fill: #eff3f6;
+  width: 100rem;
+  height: 56.25rem; }
+  @media only screen and (min-width: 751px) {
+    .HeaderRectTop {
+      width: 133.33333rem;
+      height: 75rem; } }
+  @media only screen and (min-width: 1271px) {
+    .HeaderRectTop {
+      width: 174.5rem;
+      height: 174.5rem; } }
+
+.HeaderTxt {
+  font-family: 'Khula', sans-serif;
+  font-weight: 800;
+  font-size: 19rem;
+  transform: translate(6.25rem, 12.5rem); }
+
+.HeaderClip {
+  width: 100rem;
+  height: 56.25rem; }
+  @media only screen and (min-width: 751px) {
+    .HeaderClip {
+      width: 133.33333rem;
+      height: 75rem; } }
+  @media only screen and (min-width: 1271px) {
+    .HeaderClip {
+      width: 160rem;
+      height: 90rem; } }
+
+.Skills {
+  background-color: #fff; }
+
+.SkillsHolder, .SkillsBack {
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .SkillsHolder, .SkillsBack {
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .SkillsHolder, .SkillsBack {
+      width: 160rem;
+      height: 23.5rem; } }
+
+.SkillsHolder, .SkillsBack {
+  position: relative; }
+
+.SkillsBack img {
+  width: 100%;
+  height: auto; }
+
+.SkillsTitle {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  bottom: 0;
+  font-size: 3rem;
+  line-height: 3.4375rem;
+  left: 6.25rem;
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .SkillsTitle {
+      font-size: 4rem;
+      line-height: 4.58333rem;
+      left: 15.83333rem;
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .SkillsTitle {
+      font-size: 4.8rem;
+      line-height: 8rem;
+      left: 19rem;
+      width: 11.5rem;
+      height: 6.4rem; } }
+
+.SkillsDesc {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  padding: 1.25rem; }
+  @media only screen and (min-width: 751px) {
+    .SkillsDesc {
+      font-size: 2.33333rem;
+      line-height: 2.5rem;
+      padding: 1.66667rem; } }
+  @media only screen and (min-width: 1271px) {
+    .SkillsDesc {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      padding: 4rem; } }
+
+.About {
+  background-color: #fff;
+  margin-bottom: 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .About {
+      margin-bottom: 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .About {
+      margin-bottom: 5rem; } }
+
+.AboutHolder, .AboutBack {
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .AboutHolder, .AboutBack {
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .AboutHolder, .AboutBack {
+      width: 160rem;
+      height: 23.5rem; } }
+
+.AboutHolder {
+  position: relative; }
+
+.AboutTitle {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  bottom: 0;
+  font-size: 3rem;
+  line-height: 3.4375rem;
+  left: 6.25rem;
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .AboutTitle {
+      font-size: 4rem;
+      line-height: 4.58333rem;
+      left: 15.83333rem;
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .AboutTitle {
+      font-size: 4.8rem;
+      line-height: 8rem;
+      left: 19rem;
+      width: 11.5rem;
+      height: 6.4rem; } }
+
+.AboutDesc {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  padding: 1.25rem; }
+  @media only screen and (min-width: 751px) {
+    .AboutDesc {
+      font-size: 2.33333rem;
+      line-height: 2.5rem;
+      padding: 1.66667rem; } }
+  @media only screen and (min-width: 1271px) {
+    .AboutDesc {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      padding: 4rem; } }
+
+.Portfolio {
+  background-color: #fff; }
+
+.PortfolioHolder, .PortfolioBack {
+  width: 20rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .PortfolioHolder, .PortfolioBack {
+      width: 105.83333rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .PortfolioHolder, .PortfolioBack {
+      width: 160rem;
+      height: 23.5rem; } }
+
+.PortfolioHolder, .PortfolioBack {
+  position: relative; }
+
+.PortfolioBack img {
+  width: 100%;
+  height: auto; }
+
+.PortfolioTitle {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  bottom: 0;
+  font-size: 3rem;
+  line-height: 3.4375rem;
+  left: 6.25rem;
+  padding: 0 1.25rem;
+  height: 37.5rem; }
+  @media only screen and (min-width: 751px) {
+    .PortfolioTitle {
+      font-size: 4rem;
+      line-height: 4.58333rem;
+      left: 15.83333rem;
+      padding: 0 1.66667rem;
+      height: 59.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .PortfolioTitle {
+      font-size: 4.8rem;
+      line-height: 8rem;
+      left: 19rem;
+      padding: 0 2rem;
+      height: 6.4rem; } }
+
+.PortfolioBtns a:link {
+  color: #fff;
+  text-decoration: none; }
+
+.PortfolioBtns a:visited {
+  color: #FFF;
+  text-decoration: none; }
+
+.PortfolioBtns a:hover {
+  color: #FFF;
+  text-decoration: underline; }
+
+.PortfolioBtns a:active {
+  color: #FFF;
+  text-decoration: none; }
+
+.PortfolioBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+  font-size: 1.125rem;
+  padding: 0 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .PortfolioBtn {
+      font-size: 1.5rem;
+      padding: 0 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .PortfolioBtn {
+      font-size: 3.6rem;
+      padding: 0 1rem; } }

@@ -1,0 +1,120 @@
+.Header {
+	background-color: #fff;
+	margin-bottom: rem(10,$text-bp-sm);
+
+	@include bp-medium {
+    	margin-bottom: rem(10,$text-bp-md);
+    }
+
+    @include bp-large {
+    	margin-bottom: rem(10,$text-bp-lg);
+    }
+}
+
+.Header, .HeaderHolder, .HeaderVideo, .HeaderMask{
+	width: rem(320,$text-bp-sm);
+	height: rem(600,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1270,$text-bp-md);
+		height: rem(714,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1600,$text-bp-lg);
+		height: rem(643,$text-bp-lg);
+    }
+}
+
+
+.HeaderHolder {
+	position: relative;
+	color: white;
+	overflow: hidden;
+}
+
+.HeaderVideo {
+	position: absolute;
+}
+
+.HeaderMask {
+	position: absolute;
+
+}
+
+.HeaderBack,  {
+	fill:#FFF;
+	width: rem(1600,$text-bp-sm);
+	height: rem(900,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1600,$text-bp-md);
+		height: rem(900,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1600,$text-bp-lg);
+		height: rem(900,$text-bp-lg);
+    }	
+}
+
+.HeaderRect {
+	transform: rotate(45deg) translate(rem(-800,$text-bp-sm),rem(-950,$text-bp-sm));
+	fill:#eff3f6;
+	width: rem(1600,$text-bp-sm);
+	height: rem(900,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1600,$text-bp-md);
+		height: rem(900,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1745,$text-bp-lg);
+		height: rem(1745,$text-bp-lg);
+    }	
+}
+
+.HeaderRectTop {
+	transform: rotate(45deg) translate(rem(-800,$text-bp-sm),rem(-950,$text-bp-sm));
+	fill:#eff3f6;
+	width: rem(1600,$text-bp-sm);
+	height: rem(900,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1600,$text-bp-md);
+		height: rem(900,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1745,$text-bp-lg);
+		height: rem(1745,$text-bp-lg);
+    }	
+}
+
+
+.HeaderTxt {
+	font-family: 'Khula', sans-serif;
+	font-weight: 800;
+	font-size: rem(190,$text-bp-lg);
+	transform: translate(rem(100,$text-bp-sm),rem(200,$text-bp-sm));
+}
+
+.HeaderClip {
+	width: rem(1600,$text-bp-sm);
+	height: rem(900,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1600,$text-bp-md);
+		height: rem(900,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1600,$text-bp-lg);
+		height: rem(900,$text-bp-lg);
+    }		
+}
+
+.HeaderBackHolder {
+
+}

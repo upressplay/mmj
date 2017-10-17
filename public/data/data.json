@@ -1,0 +1,37 @@
+{
+    "portfolio":[
+        {
+            "key":"thunderagents",
+            "type":"dev",
+            "title":"THUNDER AGENTS SITE",
+            "desc":"Responsive site with dynamic scrolling functionality showcasing an upcoming franchise based on a series of comic books from the 60s.",
+            "url":"http://www.thunderagents.com/",
+            "tools":"jQuery, JS, Tweenmax, CSS3, JSON",
+            "thumb":"port/thumbs/dirty_grandpa_thumb.jpg",
+            "hires":"",
+            "vid":""
+        },
+        {
+            "key":"dirty-grandpa",
+            "type":"dev",
+            "title":"DIRTY GRANDPA SITE",
+            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction.",
+            "url":"http://www.thunderagents.com/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"port/thumbs/dirty_grandpa_thumb.jpg",
+            "hires":"",
+            "vid":""
+        },
+        {
+            "key":"mcdick",
+            "type":"dev",
+            "title":"MCDICK SITE",
+            "desc":"CMS driven responsive site with dynamically loading drawers for site content. Urls and social sharing dynamically generated for single page section navigation and SEO.",
+            "url":"http://www.thunderagents.com/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"port/thumbs/dirty_grandpa_thumb.jpg",
+            "hires":"",
+            "vid":""
+        }
+    ]
+}

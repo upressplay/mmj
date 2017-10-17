@@ -1,0 +1,82 @@
+.Skills {
+	background-color: #fff;
+}
+
+.SkillsHolder, .SkillsBack {
+	width: rem(320,$text-bp-sm);
+	height: rem(600,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1270,$text-bp-md);
+		height: rem(714,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1600,$text-bp-lg);
+		height: rem(235,$text-bp-lg);
+    }
+}
+
+.SkillsHolder, .SkillsBack {
+	position: relative;
+}
+
+.SkillsBack img {
+	width:100%;
+	height:auto;
+}
+
+.SkillsTitle {
+	position: absolute;
+	background-color:#000;
+	color: #fff;
+	font-family: 'SteelTongsRegular', sans-serif;
+  	font-weight: 800;
+  	text-align: center;
+
+  	bottom: 0;
+
+  	font-size: rem(48,$text-bp-sm);
+  	line-height: rem(55,$text-bp-sm);
+	left: rem(100,$text-bp-sm);
+	width: rem(320,$text-bp-sm);
+	height: rem(600,$text-bp-sm);
+
+
+	@include bp-medium {
+		font-size: rem(48,$text-bp-md);
+		line-height: rem(55,$text-bp-md);
+		left: rem(190,$text-bp-md);
+    	width: rem(1270,$text-bp-md);
+		height: rem(714,$text-bp-md);
+    }
+
+    @include bp-large {
+    	font-size: rem(48,$text-bp-lg);
+    	line-height: rem(80,$text-bp-lg);
+    	left: rem(190,$text-bp-lg);
+    	width: rem(115,$text-bp-lg);
+		height: rem(64,$text-bp-lg);
+    }	
+}
+.SkillsDesc {
+	background-color: #000;
+	color: #fff;
+	font-size: rem(28,$text-bp-sm);
+  	line-height: rem(30,$text-bp-sm);
+	padding: rem(20,$text-bp-sm);
+	
+
+	@include bp-medium {
+		font-size: rem(28,$text-bp-md);
+		line-height: rem(30,$text-bp-md);
+		padding: rem(20,$text-bp-md);
+    }
+
+    @include bp-large {
+    	font-size: rem(28,$text-bp-lg);
+    	line-height: rem(36,$text-bp-lg);
+    	padding: rem(40,$text-bp-lg);
+    }	
+
+}

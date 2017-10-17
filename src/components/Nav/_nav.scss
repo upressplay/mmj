@@ -1,0 +1,122 @@
+.Nav {
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  display: table;
+  vertical-align: top;
+
+  width:100%;
+  max-width: rem(310,$text-bp-sm);
+
+  @include bp-medium {
+      max-width: rem(1250,$text-bp-md);
+  }
+
+  @include bp-large {
+    max-width: rem(1560,$text-bp-lg);
+  }
+
+}
+
+.NavLogo {
+  float: left;
+  background-color: #000;
+  color: #FFF;
+  font-size: rem(76,$text-bp-lg);
+  
+  padding: rem(15,$text-bp-lg) rem(25,$text-bp-lg);
+  margin-left: rem(190,$text-bp-lg);
+}
+
+.NavButtons {
+  float: right;
+  background-color: #000;
+  color: #FFF;
+  display: table;
+  padding: rem(5,$text-bp-lg) rem(15,$text-bp-lg);
+  margin-top: rem(25,$text-bp-lg);
+  margin-right: rem(10,$text-bp-lg);
+}
+.NavBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+
+  font-size: rem(18,$text-bp-sm);
+  padding: 0 rem(10,$text-bp-sm);
+
+  @include bp-medium {
+    font-size: rem(18,$text-bp-md);
+    padding: 0 rem(10,$text-bp-md);
+  }
+
+  @include bp-large {
+    font-size: rem(36,$text-bp-lg);
+    padding: 0 rem(10,$text-bp-lg);
+  }
+}
+
+.SocialBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+
+  font-size: rem(18,$text-bp-sm);
+  padding: 0 rem(10,$text-bp-sm);
+
+  @include bp-medium {
+    font-size: rem(18,$text-bp-md);
+    padding: 0 rem(10,$text-bp-md);
+  }
+
+  @include bp-large {
+    font-size: rem(36,$text-bp-lg);
+    padding: 0 rem(10,$text-bp-lg);
+  }
+}
+
+.ScreenReaderText { /* Reusable, toolbox kind of class */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.NavButtons a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavButtons a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.NavButtons a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.NavButtons a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+@keyframes navRest {
+    to {color:#000;}
+}
+
+@keyframes navRoll {
+    to {color:#333;}
+}
+
+.img {
+  width:100%;
+  height:auto;
+}
+

@@ -1,0 +1,101 @@
+.Portfolio {
+	background-color: #fff;
+}
+
+.PortfolioHolder, .PortfolioBack {
+	width: rem(320,$text-bp-sm);
+	height: rem(600,$text-bp-sm);
+
+	@include bp-medium {
+    	width: rem(1270,$text-bp-md);
+		height: rem(714,$text-bp-md);
+    }
+
+    @include bp-large {
+    	width: rem(1600,$text-bp-lg);
+		height: rem(235,$text-bp-lg);
+    }
+}
+
+.PortfolioHolder, .PortfolioBack {
+	position: relative;
+}
+
+.PortfolioBack img {
+	width:100%;
+	height:auto;
+}
+
+.PortfolioTitle {
+	position: absolute;
+	background-color:#000;
+	color: #fff;
+	font-family: 'SteelTongsRegular', sans-serif;
+  	font-weight: 800;
+  	text-align: center;
+
+  	bottom: 0;
+
+  	font-size: rem(48,$text-bp-sm);
+  	line-height: rem(55,$text-bp-sm);
+	left: rem(100,$text-bp-sm);
+	padding: 0 rem(20,$text-bp-sm);
+	height: rem(600,$text-bp-sm);
+
+
+	@include bp-medium {
+		font-size: rem(48,$text-bp-md);
+		line-height: rem(55,$text-bp-md);
+		left: rem(190,$text-bp-md);
+    	padding: 0 rem(20,$text-bp-md);
+		height: rem(714,$text-bp-md);
+    }
+
+    @include bp-large {
+    	font-size: rem(48,$text-bp-lg);
+    	line-height: rem(80,$text-bp-lg);
+    	left: rem(190,$text-bp-lg);
+    	padding: 0 rem(20,$text-bp-lg);
+		height: rem(64,$text-bp-lg);
+    }	
+}
+.PortfolioBtns a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.PortfolioBtns a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.PortfolioBtns a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.PortfolioBtns a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.PortfolioBtn {
+  cursor: pointer;
+  display: table-cell;
+  transition: color 0.5s ease;
+  color: #000;
+
+  font-size: rem(18,$text-bp-sm);
+  padding: 0 rem(10,$text-bp-sm);
+
+  @include bp-medium {
+    font-size: rem(18,$text-bp-md);
+    padding: 0 rem(10,$text-bp-md);
+  }
+
+  @include bp-large {
+    font-size: rem(36,$text-bp-lg);
+    padding: 0 rem(10,$text-bp-lg);
+  }
+}
+
