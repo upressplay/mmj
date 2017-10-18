@@ -46,8 +46,14 @@ class Portfolio extends Component {
 function PortItem(props) {
   return (
     <a href={props.url} target={props.target}>
-    <img src={props.thumb} alt={props.title}/>
-    {props.title}
+      <div id={props.key} className="PortItem">
+        <img src={props.thumb} alt={props.title}/>
+        <div className="PortInfo">
+          <div className="PortTitle">
+            {props.title}
+          </div>
+          </div>
+      </div>
     </a>
     );
 }

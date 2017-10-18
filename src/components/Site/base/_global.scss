@@ -18,7 +18,4 @@ html, body {
 		font-size: vw($text-bp-lg,$screen-bp-lg);
 	}
 	
-	@include bp-xlarge {	// maximum size
-		font-size: $text-bp-lg;
-	}
 }
