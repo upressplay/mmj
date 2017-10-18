@@ -6,7 +6,7 @@ import About from '../../components/About/About.js';
 import Skills from '../../components/Skills/Skills.js';
 import Portfolio from '../../components/Portfolio/Portfolio.js';
 
-class Site extends Component {
+class Site extends React.Component {
 
 	constructor(){
 		super() 
@@ -26,15 +26,16 @@ class Site extends Component {
 
   	}
   	render() {
+      console.log(this.state.data.about);
     	return (
-      	<div className="Site">
-        	<Nav />
-        	<Header />
-        	<Skills />
-        	<About />
-       	 	<Portfolio data={this.state.data.portfolio} />
+      	  <div className="Site">
+        	      <Nav />
+        	      <Header />
+        	      <Skills data={this.state.data}/>
+        	      <About data={this.state.data.about} />
+       	 	  <Portfolio data={this.state.data.portfolio} />
         
-      	</div>
+      	  </div>
     );
   }
 }
