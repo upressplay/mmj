@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './main.css';
 import Nav from '../../components/Nav/Nav.js';
 import Header from '../../components/Header/Header.js';
@@ -33,7 +33,7 @@ class Site extends React.Component {
         	      <Header />
         	      <Skills data={this.state.data}/>
         	      <About data={this.state.data.about} />
-       	 	  <Portfolio data={this.state.data.portfolio} />
+       	 	   <Portfolio data={this.state.data.portfolio} />
         
       	  </div>
     );

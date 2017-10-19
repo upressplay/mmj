@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import img from '../../img/portfolio.jpg';
 
-class Portfolio extends Component {
+class Portfolio extends React.Component {
    
-   constructor(){
-      super() 
+   constructor(props){
+      super(props) 
          this.state = {
          data: [],
          portItems: []
@@ -12,20 +12,20 @@ class Portfolio extends Component {
    }
    componentDidMount() {
 
-      
+      console.log("Portfolio "+this.props.data);
+      if(this.props.data !== undefined) {
+
+      this.state.portItems = this.props.data.map((item) =>
+         <PortItem key={item.key} url={item.url} title={item.title} thumb={item.thumb} />
+       );    
+      }   
 
 
    }
    render() {
       
       
-      console.log("Portfolio "+this.props.data);
-      if(this.props.data != undefined) {
-
-      this.state.portItems = this.props.data.map((item) =>
-         <PortItem key={item.key} url={item.url} title={item.title} thumb={item.thumb} />
-       );    
-      }
+      
        return (
          <div className="Portfolio">
             <div className="PortfolioHolder">
