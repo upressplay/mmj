@@ -7,19 +7,13 @@ class About extends Component {
       this.state = {
          data: [],
       };
-
    }
-   componentDidMount() {
-      //this.setState({data : props.data});
-      console.log("props = "+this.props)
-
-   }
+   
    render() {
       
-      //const desc = this.props.data.desc;
-      //console.log("desc "+desc);
+
       return (
-         <header className="About">
+         <div className="About">
             <div className="AboutHolder">
         	      <div className="AboutBack">
         		     <img src={img} alt="About"/>
@@ -29,9 +23,11 @@ class About extends Component {
         	      </div>  
             </div>  
             <div className="AboutDesc">
-
+            {this.props.desc.split('<br/><br/>').map((item, key) => {
+              return <span key={key}>{item}<br/><br/></span>
+            })}
             </div>
-         </header>
+         </div>
       );
    }
 }

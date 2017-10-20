@@ -1,19 +1,22 @@
 .Header {
 	background-color: #fff;
+	margin-top: rem(130,$text-bp-sm);
 	margin-bottom: rem(10,$text-bp-sm);
 
 	@include bp-medium {
+		margin-top: rem(0,$text-bp-md);
     	margin-bottom: rem(10,$text-bp-md);
     }
 
     @include bp-large {
+    	margin-top: rem(0,$text-bp-lg);
     	margin-bottom: rem(10,$text-bp-lg);
     }
 }
 
 .Header, .HeaderHolder, .HeaderVideo, .HeaderMask{
-	width: rem(320,$text-bp-sm);
-	height: rem(600,$text-bp-sm);
+	width: rem(750,$text-bp-sm);
+	height: rem(300,$text-bp-sm);
 
 	@include bp-medium {
     	width: rem(1270,$text-bp-md);

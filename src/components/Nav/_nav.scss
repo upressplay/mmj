@@ -1,74 +1,163 @@
 .Nav {
-  font-family: 'SteelTongsRegular', sans-serif;
-  font-weight: 800;
-  position: fixed;
-  z-index: 1000;
-  top: 0px;
-  left: 0px;
-  padding: 0;
-  display: table;
-  vertical-align: top;
+   font-family: 'SteelTongsRegular', sans-serif;
+   font-weight: 800;
+   position: fixed;
+   z-index: 1000;
+   top: 0px;
+   left: 0px;
+   padding: 0;
+   display: table;
+   vertical-align: top;
 
-  width:100%;
-  max-width: rem(310,$text-bp-sm);
+   width: rem(750,$text-bp-sm);
 
-  @include bp-medium {
-      max-width: rem(1250,$text-bp-md);
-  }
+   @include bp-medium {
+      width: rem(1250,$text-bp-md);
+   }
 
-  @include bp-large {
-    max-width: rem(1560,$text-bp-lg);
-  }
+   @include bp-large {
+      width: rem(1560,$text-bp-lg);
+   }
 
 }
 
 .NavLogo {
-  float: left;
-  background-color: #000;
-  color: #FFF;
-  font-size: rem(76,$text-bp-lg);
-  
-  padding: rem(15,$text-bp-lg) rem(25,$text-bp-lg);
-  margin-left: rem(190,$text-bp-lg);
+   position: fixed;
+   float: left;
+   background-color: #000;
+   color: #FFF;
+   text-align: center;
+
+   top:rem(0,$text-bp-sm);
+   left:rem(0,$text-bp-sm);
+   width:rem(750,$text-bp-sm);
+   font-size: rem(80,$text-bp-sm);
+   line-height: rem(80,$text-bp-sm);
+   padding: rem(25,$text-bp-sm) rem(0,$text-bp-sm);
+   margin-left: rem(0,$text-bp-sm);
+
+   @include bp-medium {
+      width:auto;
+      font-size: rem(76,$text-bp-md);
+      line-height: rem(80,$text-bp-md);
+      padding: rem(15,$text-bp-md) rem(25,$text-bp-md);
+      margin-left: rem(190,$text-bp-md);
+   }
+
+   @include bp-large {
+      width:auto;
+      font-size: rem(76,$text-bp-lg);
+      line-height: rem(80,$text-bp-lg);
+      padding: rem(15,$text-bp-lg) rem(25,$text-bp-lg);
+      margin-left: rem(190,$text-bp-lg);
+   }
+}
+
+.Menu {
+   display:block;
+   position: fixed;
+   color: #fff;
+
+   top:rem(20,$text-bp-sm);
+   right:rem(30,$text-bp-sm);
+   font-size: rem(80,$text-bp-sm);
+   line-height: rem(80,$text-bp-sm); 
+   @include bp-medium {
+      display:none;
+   }
+
+   @include bp-large {
+      display:none;
+   }
 }
 
 .NavButtons {
-  float: right;
-  background-color: #000;
-  color: #FFF;
-  display: table;
-  padding: rem(5,$text-bp-lg) rem(15,$text-bp-lg);
-  margin-top: rem(25,$text-bp-lg);
-  margin-right: rem(10,$text-bp-lg);
+   position: fixed;
+   background-color: #000;
+   color: #FFF;
+   text-align: center;
+
+   top:rem(120,$text-bp-sm);
+   right:rem(0,$text-bp-sm);
+
+   width:rem(750,$text-bp-sm);
+   height:0;
+   overflow: hidden;
+   padding: rem(0,$text-bp-sm) rem(0,$text-bp-sm);
+
+
+   @include bp-medium {
+      width:auto;
+      height:auto;
+      padding: rem(5,$text-bp-md) rem(15,$text-bp-md);
+
+   }
+
+   @include bp-large {
+      top:rem(0,$text-bp-lg);
+      right:rem(50,$text-bp-lg);
+      width:auto;
+      height:auto;
+      padding: rem(5,$text-bp-lg) rem(15,$text-bp-lg);
+
+   }
 }
+.NavBtnHolder, .SocialBtnHolder {
+   display: inline-block;
+   width:100%;
+   @include bp-medium {
+      width:auto;
+   }
+
+   @include bp-large {
+      width:auto;
+   }
+}
+
+.SocialBtnHolder {
+   display: inline-block;
+   margin-bottom:rem(100,$text-bp-sm);
+   @include bp-medium {
+      margin-bottom:rem(0,$text-bp-md);
+   }
+
+   @include bp-large {
+      margin-bottom:rem(0,$text-bp-lg);
+   }
+}
+
 .NavBtn {
-  cursor: pointer;
-  display: table-cell;
-  transition: color 0.5s ease;
-  color: #000;
+   cursor: pointer;
+   display: inline-block;
+   text-align: center;
+   transition: color 0.5s ease;
+   color: #000;
 
-  font-size: rem(18,$text-bp-sm);
-  padding: 0 rem(10,$text-bp-sm);
+   width:rem(730,$text-bp-sm);;
+   font-size: rem(80,$text-bp-sm);
+   padding: rem(40,$text-bp-sm) rem(0,$text-bp-sm);
 
-  @include bp-medium {
-    font-size: rem(18,$text-bp-md);
-    padding: 0 rem(10,$text-bp-md);
-  }
+   @include bp-medium {
+      width:auto;
+      font-size: rem(18,$text-bp-md);
+      padding: 0 rem(10,$text-bp-md);
+   }
 
-  @include bp-large {
-    font-size: rem(36,$text-bp-lg);
-    padding: 0 rem(10,$text-bp-lg);
-  }
+   @include bp-large {
+      width:auto;
+      font-size: rem(36,$text-bp-lg);
+      padding: 0 rem(10,$text-bp-lg);
+   }
 }
 
 .SocialBtn {
   cursor: pointer;
-  display: table-cell;
+  display: inline-block;
   transition: color 0.5s ease;
   color: #000;
 
-  font-size: rem(18,$text-bp-sm);
-  padding: 0 rem(10,$text-bp-sm);
+  font-size: rem(70,$text-bp-sm);
+  padding: rem(30,$text-bp-sm) rem(30,$text-bp-sm);
 
   @include bp-medium {
     font-size: rem(18,$text-bp-md);

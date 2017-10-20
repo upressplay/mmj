@@ -1,10 +1,10 @@
 .Portfolio {
-	background-color: #fff;
+	background-color: #000;
 }
 
 .PortfolioHolder, .PortfolioBack {
-	width: rem(320,$text-bp-sm);
-	height: rem(600,$text-bp-sm);
+	width: rem(750,$text-bp-sm);
+	height: rem(180,$text-bp-sm);
 
 	@include bp-medium {
     	width: rem(1270,$text-bp-md);
@@ -27,37 +27,44 @@
 }
 
 .PortfolioTitle {
-	position: absolute;
-	background-color:#000;
-	color: #fff;
-	font-family: 'SteelTongsRegular', sans-serif;
-  	font-weight: 800;
-  	text-align: center;
+   position: absolute;
+   background-color:#000;
+   color: #fff;
+   font-family: 'SteelTongsRegular', sans-serif;
+   font-weight: 800;
+   text-align: center;
 
-  	bottom: 0;
+   bottom: 0;
 
-  	font-size: rem(48,$text-bp-sm);
-  	line-height: rem(55,$text-bp-sm);
-	left: rem(100,$text-bp-sm);
-	padding: 0 rem(20,$text-bp-sm);
-	height: rem(600,$text-bp-sm);
+   font-size: rem(48,$text-bp-sm);
+   line-height: rem(100,$text-bp-sm);
+   left: rem(0,$text-bp-sm);
+   width: rem(750,$text-bp-sm);
+   height: rem(70,$text-bp-sm);
+   padding: 0;
 
+   @include bp-medium {
+      font-size: rem(48,$text-bp-md);
+      line-height: rem(55,$text-bp-md);
+      left: rem(190,$text-bp-md);
+      width: rem(115,$text-bp-md);
+      height: rem(714,$text-bp-md);
+      padding: 0 rem(30,$text-bp-md);
+   }
 
-	@include bp-medium {
-		font-size: rem(48,$text-bp-md);
-		line-height: rem(55,$text-bp-md);
-		left: rem(190,$text-bp-md);
-    	padding: 0 rem(20,$text-bp-md);
-		height: rem(714,$text-bp-md);
-    }
+   @include bp-large {
+   	font-size: rem(48,$text-bp-lg);
+   	line-height: rem(80,$text-bp-lg);
+   	left: rem(190,$text-bp-lg);
+      width: auto;
+      height: rem(64,$text-bp-lg);
+      padding: 0 rem(20,$text-bp-lg);
+   }	
+}
 
-    @include bp-large {
-    	font-size: rem(48,$text-bp-lg);
-    	line-height: rem(80,$text-bp-lg);
-    	left: rem(190,$text-bp-lg);
-    	padding: 0 rem(20,$text-bp-lg);
-		height: rem(64,$text-bp-lg);
-    }	
+.PortfolioBtns {
+   display: inline-block;
+   margin-left: rem(10,$text-bp-lg);
 }
 .PortfolioBtns a:link {
   color: #fff;
@@ -81,9 +88,9 @@
 
 .PortfolioBtn {
   cursor: pointer;
-  display: table-cell;
+  display: inline-block;
   transition: color 0.5s ease;
-  color: #000;
+  color: #fff;
 
   font-size: rem(18,$text-bp-sm);
   padding: 0 rem(10,$text-bp-sm);
@@ -94,8 +101,104 @@
   }
 
   @include bp-large {
-    font-size: rem(36,$text-bp-lg);
+    font-size: rem(24,$text-bp-lg);
     padding: 0 rem(10,$text-bp-lg);
   }
 }
+
+.PortfolioContent {
+   display: table;
+   text-align: center;
+   width: 100%;
+}
+.PortItem {
+   display: inline-block;
+   vertical-align: middle;
+   background-color: #000;
+
+   margin:rem(20,$text-bp-sm) auto rem(70,$text-bp-sm) auto;
+   width:rem(700,$text-bp-sm);
+
+   @include bp-medium {
+      margin:rem(20,$text-bp-md) auto rem(70,$text-bp-md) auto;
+      width:rem(700,$text-bp-md);
+   }
+
+   @include bp-large {
+      margin:rem(20,$text-bp-lg) rem(20,$text-bp-lg) rem(70,$text-bp-lg) rem(20,$text-bp-lg);
+      width:rem(450,$text-bp-lg);
+   }
+}
+
+.PortInfo {
+   margin: rem(20,$text-bp-sm);
+}
+.PortTitle {
+   font-family: 'SteelTongsRegular', sans-serif;
+   font-weight: 800;
+   color: #fff;
+   text-align: center;
+
+   font-size: rem(60,$text-bp-sm);
+   line-height: rem(80,$text-bp-sm); 
+   padding: 0 rem(10,$text-bp-sm);
+
+   @include bp-medium {
+      font-size: rem(60,$text-bp-md);
+      line-height: rem(80,$text-bp-md); 
+      padding: 0 rem(10,$text-bp-md);
+   }
+
+   @include bp-large {
+      font-size: rem(36,$text-bp-lg);
+      line-height: rem(48,$text-bp-lg); 
+      padding: 0 rem(10,$text-bp-lg);
+   }
+}
+
+.PortDesc {
+
+   color: #fff;
+   text-align: center;
+
+   font-size: rem(21,$text-bp-sm);
+   line-height: rem(28,$text-bp-sm); 
+   padding: 0 rem(10,$text-bp-sm);
+
+   @include bp-medium {
+      font-size: rem(60,$text-bp-md);
+      line-height: rem(80,$text-bp-md); 
+      padding: 0 rem(10,$text-bp-md);
+   }
+
+   @include bp-large {
+      font-size: rem(16,$text-bp-lg);
+      line-height: rem(21,$text-bp-lg); 
+      padding: 0 rem(10,$text-bp-lg);
+   }
+}
+
+.PortTools {
+
+   color: #fff;
+   text-align: center;
+   font-style: italic;
+   font-size: rem(21,$text-bp-sm);
+   line-height: rem(28,$text-bp-sm); 
+   padding: 0 rem(10,$text-bp-sm);
+
+   @include bp-medium {
+      font-size: rem(60,$text-bp-md);
+      line-height: rem(80,$text-bp-md); 
+      padding: 0 rem(10,$text-bp-md);
+   }
+
+   @include bp-large {
+      font-size: rem(16,$text-bp-lg);
+      line-height: rem(21,$text-bp-lg); 
+      padding: 0 rem(10,$text-bp-lg);
+   }
+}
+
+
 

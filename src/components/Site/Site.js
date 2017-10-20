@@ -11,7 +11,9 @@ class Site extends React.Component {
 	constructor(){
 		super() 
       	this.state = {
-        	data: []
+        	data: [],
+         about:"",
+         portfolio: []
       	};
   	}
 
@@ -19,21 +21,22 @@ class Site extends React.Component {
       fetch('data/data.json')
   		.then(res => res.json())
   		.then(data => {
-  			//console.log(data)
-  			this.setState({data : data});
+  			console.log(data.portfolio)
+  			this.setState({portfolio : data.portfolio});
+         this.setState({about : data.about.desc});
   		});
 
-
+   console.log("Site render "+this.state.about);
   	}
   	render() {
-      console.log(this.state.data.about);
+      
     	return (
       	  <div className="Site">
         	      <Nav />
         	      <Header />
         	      <Skills data={this.state.data}/>
-        	      <About data={this.state.data.about} />
-       	 	   <Portfolio data={this.state.data.portfolio} />
+        	      <About desc={this.state.about} />
+               <Portfolio data={this.state.portfolio} />
         
       	  </div>
     );
