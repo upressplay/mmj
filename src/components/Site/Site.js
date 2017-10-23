@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header.js';
 import About from '../../components/About/About.js';
 import Skills from '../../components/Skills/Skills.js';
 import Portfolio from '../../components/Portfolio/Portfolio.js';
+import Contact from '../../components/Contact/Contact.js';
 
 class Site extends React.Component {
 
@@ -13,7 +14,9 @@ class Site extends React.Component {
       	this.state = {
         	data: [],
          about:"",
-         portfolio: []
+         portfolio: [],
+         navBtns:[],
+         socialBtns:[]
       	};
   	}
 
@@ -24,20 +27,23 @@ class Site extends React.Component {
   			console.log(data.portfolio)
   			this.setState({portfolio : data.portfolio});
          this.setState({about : data.about.desc});
+         this.setState({navBtns : data.nav.navBtns});
+         this.setState({socialBtns : data.nav.socialBtns});
+         console.log("Site render = "+this.state.navBtns);
   		});
 
-   console.log("Site render "+this.state.about);
+      //console.log("Site render = "+this.state.navBtns);
   	}
   	render() {
       
     	return (
       	  <div className="Site">
-        	      <Nav />
+        	      <Nav navBtns={this.state.navBtns} socialBtns={this.state.socialBtns}/>
         	      <Header />
         	      <Skills data={this.state.data}/>
         	      <About desc={this.state.about} />
                <Portfolio data={this.state.portfolio} />
-        
+               <Contact />
       	  </div>
     );
   }

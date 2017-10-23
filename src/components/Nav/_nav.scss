@@ -41,7 +41,7 @@
       font-size: rem(76,$text-bp-md);
       line-height: rem(80,$text-bp-md);
       padding: rem(15,$text-bp-md) rem(25,$text-bp-md);
-      margin-left: rem(190,$text-bp-md);
+      margin-left: rem(150,$text-bp-md);
    }
 
    @include bp-large {
@@ -87,6 +87,8 @@
 
 
    @include bp-medium {
+      top:rem(0,$text-bp-md);
+      right:rem(50,$text-bp-md);
       width:auto;
       height:auto;
       padding: rem(5,$text-bp-md) rem(15,$text-bp-md);
@@ -139,7 +141,7 @@
 
    @include bp-medium {
       width:auto;
-      font-size: rem(18,$text-bp-md);
+      font-size: rem(36,$text-bp-md);
       padding: 0 rem(10,$text-bp-md);
    }
 

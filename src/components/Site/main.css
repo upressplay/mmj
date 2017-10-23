@@ -94,7 +94,14 @@ html, body {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding-bottom: 3.125rem; }
+  @media only screen and (min-width: 751px) {
+    .Site {
+      padding-bottom: 4.16667rem; } }
+  @media only screen and (min-width: 1271px) {
+    .Site {
+      padding-bottom: 5rem; } }
 
 img {
   width: 100%;
@@ -140,7 +147,7 @@ body {
       font-size: 6.33333rem;
       line-height: 6.66667rem;
       padding: 1.25rem 2.08333rem;
-      margin-left: 15.83333rem; } }
+      margin-left: 12.5rem; } }
   @media only screen and (min-width: 1271px) {
     .NavLogo {
       width: auto;
@@ -177,6 +184,8 @@ body {
   padding: 0rem 0rem; }
   @media only screen and (min-width: 751px) {
     .NavButtons {
+      top: 0rem;
+      right: 4.16667rem;
       width: auto;
       height: auto;
       padding: 0.41667rem 1.25rem; } }
@@ -220,7 +229,7 @@ body {
   @media only screen and (min-width: 751px) {
     .NavBtn {
       width: auto;
-      font-size: 1.5rem;
+      font-size: 3rem;
       padding: 0 0.83333rem; } }
   @media only screen and (min-width: 1271px) {
     .NavBtn {
@@ -297,7 +306,7 @@ body {
   @media only screen and (min-width: 751px) {
     .Header, .HeaderHolder, .HeaderVideo, .HeaderMask {
       width: 105.83333rem;
-      height: 59.5rem; } }
+      height: 42.5rem; } }
   @media only screen and (min-width: 1271px) {
     .Header, .HeaderHolder, .HeaderVideo, .HeaderMask {
       width: 160rem;
@@ -377,12 +386,13 @@ body {
   background-color: #fff; }
 
 .SkillsHolder, .SkillsBack {
+  overflow: hidden;
   width: 46.875rem;
   height: 11.25rem; }
   @media only screen and (min-width: 751px) {
     .SkillsHolder, .SkillsBack {
       width: 105.83333rem;
-      height: 59.5rem; } }
+      height: 15rem; } }
   @media only screen and (min-width: 1271px) {
     .SkillsHolder, .SkillsBack {
       width: 160rem;
@@ -411,10 +421,10 @@ body {
   @media only screen and (min-width: 751px) {
     .SkillsTitle {
       font-size: 4rem;
-      line-height: 4.58333rem;
-      left: 15.83333rem;
-      width: 9.58333rem;
-      height: 59.5rem; } }
+      line-height: 6.66667rem;
+      left: 12.5rem;
+      width: 15.83333rem;
+      height: 5.33333rem; } }
   @media only screen and (min-width: 1271px) {
     .SkillsTitle {
       font-size: 4.8rem;
@@ -432,9 +442,9 @@ body {
   text-align: center; }
   @media only screen and (min-width: 751px) {
     .SkillsDesc {
-      font-size: 2.33333rem;
-      line-height: 2.5rem;
-      padding: 1.66667rem; } }
+      font-size: 1.75rem;
+      line-height: 2.33333rem;
+      padding: 3.33333rem; } }
   @media only screen and (min-width: 1271px) {
     .SkillsDesc {
       font-size: 2.8rem;
@@ -452,12 +462,13 @@ body {
       margin-bottom: 5rem; } }
 
 .AboutHolder, .AboutBack {
+  overflow: hidden;
   width: 46.875rem;
   height: 11.25rem; }
   @media only screen and (min-width: 751px) {
     .AboutHolder, .AboutBack {
       width: 105.83333rem;
-      height: 59.5rem; } }
+      height: 15.41667rem; } }
   @media only screen and (min-width: 1271px) {
     .AboutHolder, .AboutBack {
       width: 160rem;
@@ -482,10 +493,10 @@ body {
   @media only screen and (min-width: 751px) {
     .AboutTitle {
       font-size: 4rem;
-      line-height: 4.58333rem;
-      left: 15.83333rem;
-      width: 105.83333rem;
-      height: 59.5rem; } }
+      line-height: 6.66667rem;
+      left: 12.5rem;
+      width: 15.83333rem;
+      height: 5.33333rem; } }
   @media only screen and (min-width: 1271px) {
     .AboutTitle {
       font-size: 4.8rem;
@@ -503,9 +514,9 @@ body {
   text-align: center; }
   @media only screen and (min-width: 751px) {
     .AboutDesc {
-      font-size: 2.33333rem;
+      font-size: 1.75rem;
       line-height: 2.5rem;
-      padding: 1.66667rem; } }
+      padding: 3.33333rem; } }
   @media only screen and (min-width: 1271px) {
     .AboutDesc {
       font-size: 1.8rem;
@@ -516,12 +527,13 @@ body {
   background-color: #000; }
 
 .PortfolioHolder, .PortfolioBack {
+  overflow: hidden;
   width: 46.875rem;
   height: 11.25rem; }
   @media only screen and (min-width: 751px) {
     .PortfolioHolder, .PortfolioBack {
       width: 105.83333rem;
-      height: 59.5rem; } }
+      height: 15.41667rem; } }
   @media only screen and (min-width: 1271px) {
     .PortfolioHolder, .PortfolioBack {
       width: 160rem;
@@ -551,10 +563,10 @@ body {
   @media only screen and (min-width: 751px) {
     .PortfolioTitle {
       font-size: 4rem;
-      line-height: 4.58333rem;
-      left: 15.83333rem;
-      width: 9.58333rem;
-      height: 59.5rem;
+      line-height: 6.66667rem;
+      left: 12.5rem;
+      width: auto;
+      height: 5.83333rem;
       padding: 0 2.5rem; } }
   @media only screen and (min-width: 1271px) {
     .PortfolioTitle {
@@ -604,21 +616,28 @@ body {
 .PortfolioContent {
   display: table;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  min-height: 43.75rem; }
+  @media only screen and (min-width: 751px) {
+    .PortfolioContent {
+      min-height: 58.33333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .PortfolioContent {
+      min-height: 50rem; } }
 
 .PortItem {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   background-color: #000;
   margin: 1.25rem auto 4.375rem auto;
   width: 43.75rem; }
   @media only screen and (min-width: 751px) {
     .PortItem {
-      margin: 1.66667rem auto 5.83333rem auto;
-      width: 58.33333rem; } }
+      margin: 1.66667rem 1.66667rem 1.66667rem 1.66667rem;
+      width: 45.83333rem; } }
   @media only screen and (min-width: 1271px) {
     .PortItem {
-      margin: 2rem 2rem 7rem 2rem;
+      margin: 3rem 2rem 2rem 2rem;
       width: 45rem; } }
 
 .PortInfo {
@@ -634,8 +653,8 @@ body {
   padding: 0 0.625rem; }
   @media only screen and (min-width: 751px) {
     .PortTitle {
-      font-size: 5rem;
-      line-height: 6.66667rem;
+      font-size: 3.33333rem;
+      line-height: 4.58333rem;
       padding: 0 0.83333rem; } }
   @media only screen and (min-width: 1271px) {
     .PortTitle {
@@ -651,8 +670,8 @@ body {
   padding: 0 0.625rem; }
   @media only screen and (min-width: 751px) {
     .PortDesc {
-      font-size: 5rem;
-      line-height: 6.66667rem;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
       padding: 0 0.83333rem; } }
   @media only screen and (min-width: 1271px) {
     .PortDesc {
@@ -661,7 +680,7 @@ body {
       padding: 0 1rem; } }
 
 .PortTools {
-  color: #fff;
+  color: #999;
   text-align: center;
   font-style: italic;
   font-size: 1.3125rem;
@@ -669,11 +688,102 @@ body {
   padding: 0 0.625rem; }
   @media only screen and (min-width: 751px) {
     .PortTools {
-      font-size: 5rem;
-      line-height: 6.66667rem;
-      padding: 0 0.83333rem; } }
+      font-size: 1.41667rem;
+      line-height: 2.33333rem;
+      padding: 0.83333rem 0.83333rem; } }
   @media only screen and (min-width: 1271px) {
     .PortTools {
       font-size: 1.6rem;
       line-height: 2.1rem;
-      padding: 0 1rem; } }
+      padding: 1rem 1rem; } }
+
+.Contact {
+  background-color: #fff;
+  margin-bottom: 0.625rem; }
+  @media only screen and (min-width: 751px) {
+    .Contact {
+      margin-bottom: 0.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .Contact {
+      margin-bottom: 5rem; } }
+
+.ContactHolder, .ContactBack {
+  overflow: hidden;
+  width: 46.875rem;
+  height: 11.25rem; }
+  @media only screen and (min-width: 751px) {
+    .ContactHolder, .ContactBack {
+      width: 105.83333rem;
+      height: 15.41667rem; } }
+  @media only screen and (min-width: 1271px) {
+    .ContactHolder, .ContactBack {
+      width: 160rem;
+      height: 23.5rem; } }
+
+.ContactHolder {
+  position: relative; }
+
+.ContactTitle {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  bottom: 0;
+  font-size: 3rem;
+  line-height: 6.25rem;
+  left: 0rem;
+  width: 46.875rem;
+  height: 4.375rem; }
+  @media only screen and (min-width: 751px) {
+    .ContactTitle {
+      font-size: 4rem;
+      line-height: 6.66667rem;
+      left: 12.5rem;
+      width: 15.83333rem;
+      height: 5.83333rem; } }
+  @media only screen and (min-width: 1271px) {
+    .ContactTitle {
+      font-size: 4.8rem;
+      line-height: 8rem;
+      left: 19rem;
+      width: 11.5rem;
+      height: 6.4rem; } }
+
+.ContactInfo {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  padding: 1.25rem;
+  text-align: center; }
+  @media only screen and (min-width: 751px) {
+    .ContactInfo {
+      font-size: 2.33333rem;
+      line-height: 2.5rem;
+      padding: 5rem 12.5rem;
+      text-align: left; } }
+  @media only screen and (min-width: 1271px) {
+    .ContactInfo {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      padding: 6rem 19rem;
+      text-align: left; } }
+
+.ContactInfo a {
+  background-color: #000;
+  color: #fff; }
+
+.ContactName {
+  font-family: 'SteelTongsRegular', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.875rem; }
+  @media only screen and (min-width: 751px) {
+    .ContactName {
+      font-size: 2.33333rem;
+      line-height: 2.5rem; } }
+  @media only screen and (min-width: 1271px) {
+    .ContactName {
+      font-size: 3.6rem;
+      line-height: 4rem; } }

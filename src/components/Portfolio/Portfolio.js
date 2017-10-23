@@ -14,35 +14,48 @@ class Portfolio extends React.Component {
    }
    componentDidMount() {
 
-      //console.log("Portfolio "+this.props.data);
-         
-      
-
    }
    sort(key) {
+
       console.log("sort = "+key);
-         var sortItems = this.props.data.map((item) =>
+
+      var sortArray = [];
+
+      this.props.data.map(function(item, i){
+
+         var istype = false;
          
+         item.type.map(function(sorts, i){
+            console.log(sorts)
+            if(sorts === key) {
+               istype = true;   
+            }
 
+         });
+         console.log("istype = "+istype);
 
-         console.log(item.type)
-      );
-
-      var items = this.props.data.map(function(item, i){
-
-         if(item.type === key || key === 'all') {
-            TweenMax.to('#'+item.key, 0.5,{ autoAlpha:1, display:'inline-block' });
-         } else {
-            TweenMax.to('#'+item.key, 0.5, { autoAlpha:0, display:'none' });
+         if(istype || key === 'all') {
+            sortArray.push(item);
          }
-
+         TweenMax.to('#'+item.key, 0.5, { autoAlpha:0, display:'none' , overright:2});
+         return;
       });
-   }
-   divDisplay(id,display) {
+      
+      var delay = .55;
+
+      sortArray.map((item) => {
+         
+         TweenMax.to('#'+item.key, 0.5,{ delay:delay, autoAlpha:1, display:'inline-block' , overright:2});
+         delay = delay + .5;
+         console.log("delay = "+delay);
+         
+         
+      });
+
 
    }
+
    render() {
-      
        
       const portItems = this.props.data.map((item) =>
          <PortItem key={item.key} id={item.key} url={item.url} title={item.title} desc={item.desc} thumb={item.thumb} tools={item.tools}/>
@@ -59,7 +72,7 @@ class Portfolio extends React.Component {
                      <div className="PortfolioBtn" onClick={() => { this.sort('all') }}>
                         ALL
                      </div>
-                     <div className="PortfolioBtn" onClick={() => { this.sort('dev') }}>
+                     <div className="PortfolioBtn" onClick={() => { this.sort('web') }}>
                         WEB
                      </div>
                      <div className="PortfolioBtn" onClick={() => { this.sort('vr') }}>

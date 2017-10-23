@@ -3,12 +3,13 @@
 }
 
 .PortfolioHolder, .PortfolioBack {
+   overflow: hidden;
 	width: rem(750,$text-bp-sm);
 	height: rem(180,$text-bp-sm);
 
 	@include bp-medium {
     	width: rem(1270,$text-bp-md);
-		height: rem(714,$text-bp-md);
+		height: rem(185,$text-bp-md);
     }
 
     @include bp-large {
@@ -18,7 +19,7 @@
 }
 
 .PortfolioHolder, .PortfolioBack {
-	position: relative;
+  position: relative;
 }
 
 .PortfolioBack img {
@@ -45,10 +46,10 @@
 
    @include bp-medium {
       font-size: rem(48,$text-bp-md);
-      line-height: rem(55,$text-bp-md);
-      left: rem(190,$text-bp-md);
-      width: rem(115,$text-bp-md);
-      height: rem(714,$text-bp-md);
+      line-height: rem(80,$text-bp-md);
+      left: rem(150,$text-bp-md);
+      width: auto;
+      height: rem(70,$text-bp-md);
       padding: 0 rem(30,$text-bp-md);
    }
 
@@ -110,22 +111,31 @@
    display: table;
    text-align: center;
    width: 100%;
+   min-height:rem(700,$text-bp-sm);
+
+   @include bp-medium {
+      min-height:rem(700,$text-bp-md);
+   }
+
+   @include bp-large {
+      min-height:rem(500,$text-bp-lg);
+   }
 }
 .PortItem {
    display: inline-block;
-   vertical-align: middle;
+   vertical-align: top;
    background-color: #000;
 
    margin:rem(20,$text-bp-sm) auto rem(70,$text-bp-sm) auto;
    width:rem(700,$text-bp-sm);
 
    @include bp-medium {
-      margin:rem(20,$text-bp-md) auto rem(70,$text-bp-md) auto;
-      width:rem(700,$text-bp-md);
+      margin:rem(20,$text-bp-md) rem(20,$text-bp-md) rem(20,$text-bp-md) rem(20,$text-bp-md);
+      width:rem(550,$text-bp-md);
    }
 
    @include bp-large {
-      margin:rem(20,$text-bp-lg) rem(20,$text-bp-lg) rem(70,$text-bp-lg) rem(20,$text-bp-lg);
+      margin:rem(30,$text-bp-lg) rem(20,$text-bp-lg) rem(20,$text-bp-lg) rem(20,$text-bp-lg);
       width:rem(450,$text-bp-lg);
    }
 }
@@ -144,8 +154,8 @@
    padding: 0 rem(10,$text-bp-sm);
 
    @include bp-medium {
-      font-size: rem(60,$text-bp-md);
-      line-height: rem(80,$text-bp-md); 
+      font-size: rem(40,$text-bp-md);
+      line-height: rem(55,$text-bp-md); 
       padding: 0 rem(10,$text-bp-md);
    }
 
@@ -166,8 +176,8 @@
    padding: 0 rem(10,$text-bp-sm);
 
    @include bp-medium {
-      font-size: rem(60,$text-bp-md);
-      line-height: rem(80,$text-bp-md); 
+      font-size: rem(18,$text-bp-md);
+      line-height: rem(21,$text-bp-md); 
       padding: 0 rem(10,$text-bp-md);
    }
 
@@ -180,7 +190,7 @@
 
 .PortTools {
 
-   color: #fff;
+   color: #999;
    text-align: center;
    font-style: italic;
    font-size: rem(21,$text-bp-sm);
@@ -188,15 +198,15 @@
    padding: 0 rem(10,$text-bp-sm);
 
    @include bp-medium {
-      font-size: rem(60,$text-bp-md);
-      line-height: rem(80,$text-bp-md); 
-      padding: 0 rem(10,$text-bp-md);
+      font-size: rem(17,$text-bp-md);
+      line-height: rem(28,$text-bp-md); 
+      padding: rem(10,$text-bp-md) rem(10,$text-bp-md);
    }
 
    @include bp-large {
       font-size: rem(16,$text-bp-lg);
       line-height: rem(21,$text-bp-lg); 
-      padding: 0 rem(10,$text-bp-lg);
+      padding: rem(10,$text-bp-lg) rem(10,$text-bp-lg);
    }
 }
 

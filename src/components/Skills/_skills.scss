@@ -3,12 +3,14 @@
 }
 
 .SkillsHolder, .SkillsBack {
+
+	overflow: hidden;
 	width: rem(750,$text-bp-sm);
 	height: rem(180,$text-bp-sm);
 
 	@include bp-medium {
     	width: rem(1270,$text-bp-md);
-		height: rem(714,$text-bp-md);
+		height: rem(180,$text-bp-md);
     }
 
     @include bp-large {
@@ -45,10 +47,10 @@
 
 	@include bp-medium {
 		font-size: rem(48,$text-bp-md);
-		line-height: rem(55,$text-bp-md);
-		left: rem(190,$text-bp-md);
-    	width: rem(115,$text-bp-md);
-		height: rem(714,$text-bp-md);
+		line-height: rem(80,$text-bp-md);
+		left: rem(150,$text-bp-md);
+    	width: rem(190,$text-bp-md);
+		height: rem(64,$text-bp-md);
     }
 
     @include bp-large {
@@ -68,9 +70,9 @@
 	text-align: center;
 
 	@include bp-medium {
-		font-size: rem(28,$text-bp-md);
-		line-height: rem(30,$text-bp-md);
-		padding: rem(20,$text-bp-md);
+		font-size: rem(21,$text-bp-md);
+		line-height: rem(28,$text-bp-md);
+		padding: rem(40,$text-bp-md);
     }
 
     @include bp-large {
