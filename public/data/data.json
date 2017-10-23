@@ -100,6 +100,16 @@
             "gallery":[]
         },
         {
+            "key":"alvh",
+            "type":["web"],
+            "title":"ABRAHAM LINCOLN VAMPIRE HUNTER -  MOTION COMIC",
+            "desc":"In promotion of the theatrical release of the sci-fi horror feature, Abraham Lincoln Vampire Hunter, we were commissioned to build an html5 based motion comic. Translated into over 10 different languages.",
+            "url":"http://matthewmjones.com/port/alvh/",
+            "tools":"Canvas, Javascript, jQuery, CSS3",
+            "thumb":"img/alvh_thumb.jpg",
+            "gallery":[]
+        },
+        {
             "key":"afterearth",
             "type":["web"],
             "title":"AFTER EARTH SITE",
@@ -117,6 +127,28 @@
             "url":"http://panandtilt.com/",
             "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
             "thumb":"img/pan_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"blacksails",
+            "type":["web", "design"],
+            "title":"BLACK SAILS",
+            "desc":"CMS driven site with custom shareable content for 'Bloody Truths.' Interactive gallery with historical informaion on weapons, clothing and the life of a pirate.",
+            "url":"http://panandtilt.com/",
+            "tools":"Wordpress, jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/blacksails_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"dinos",
+            "type":["games"],
+            "title":"DIGGING FOR DINOS",
+            "desc":"Desktop, Tablet and Mobile search game promoting the 3d movie. ",
+            "url":"http://matthewmjones.com/port/dinos",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/dinos_thumb.jpg",
           
             "gallery":[]
         },

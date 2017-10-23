@@ -75,6 +75,9 @@ class Portfolio extends React.Component {
                      <div className="PortfolioBtn" onClick={() => { this.sort('web') }}>
                         WEB
                      </div>
+                     <div className="PortfolioBtn" onClick={() => { this.sort('games') }}>
+                        GAMES
+                     </div>
                      <div className="PortfolioBtn" onClick={() => { this.sort('vr') }}>
                         VR
                      </div>
