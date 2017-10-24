@@ -6,14 +6,15 @@
   width:100%;
   height:100%;
   
-  padding-bottom: rem(50,$text-bp-sm);
+  background-color: #000;
+  padding-bottom: rem(30,$text-bp-sm);
 
    @include bp-medium {
-      padding-bottom: rem(50,$text-bp-md);
+      padding-bottom: rem(30,$text-bp-md);
    }
 
    @include bp-large {
-      padding-bottom: rem(50,$text-bp-lg);
+      padding-bottom: rem(30,$text-bp-lg);
    }
 }
 

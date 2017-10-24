@@ -95,13 +95,14 @@ html, body {
   overflow-y: hidden;
   width: 100%;
   height: 100%;
-  padding-bottom: 3.125rem; }
+  background-color: #000;
+  padding-bottom: 1.875rem; }
   @media only screen and (min-width: 751px) {
     .Site {
-      padding-bottom: 4.16667rem; } }
+      padding-bottom: 2.5rem; } }
   @media only screen and (min-width: 1271px) {
     .Site {
-      padding-bottom: 5rem; } }
+      padding-bottom: 3rem; } }
 
 img {
   width: 100%;
@@ -288,7 +289,7 @@ body {
   height: auto; }
 
 .Header {
-  background-color: #fff;
+  background-color: #000;
   margin-top: 8.125rem;
   margin-bottom: 0.625rem; }
   @media only screen and (min-width: 751px) {
@@ -383,7 +384,7 @@ body {
       height: 90rem; } }
 
 .Skills {
-  background-color: #fff; }
+  background-color: #000; }
 
 .SkillsHolder, .SkillsBack {
   overflow: hidden;
@@ -452,7 +453,7 @@ body {
       padding: 4rem; } }
 
 .About {
-  background-color: #fff;
+  background-color: #000;
   margin-bottom: 0.625rem; }
   @media only screen and (min-width: 751px) {
     .About {
@@ -696,6 +697,12 @@ body {
       font-size: 1.6rem;
       line-height: 2.1rem;
       padding: 1rem 1rem; } }
+
+.PortShow {
+  display: inline-block; }
+
+.PortHide {
+  display: none; }
 
 .Contact {
   background-color: #fff;

@@ -37,18 +37,18 @@ class Portfolio extends React.Component {
          if(istype || key === 'all') {
             sortArray.push(item);
          }
-         TweenMax.to('#'+item.key, 0.5, { autoAlpha:0, display:'none' , overright:2});
+         TweenMax.to('#'+item.key, 0.25, { autoAlpha:0, display:'none' , overwrite:2});
          return;
       });
       
       var delay = .55;
 
       sortArray.map((item) => {
-         
-         TweenMax.to('#'+item.key, 0.5,{ delay:delay, autoAlpha:1, display:'inline-block' , overright:2});
-         delay = delay + .5;
+         //var thisItem = item.key;
+         //this.refs[item.key]  .style.display = "inline-block";
+         TweenMax.to('#'+item.key, 0.5,{ delay:delay, autoAlpha:1, display:'inline-block', overwrite:2});
+         delay = delay + .1;
          console.log("delay = "+delay);
-         
          
       });
 
@@ -58,7 +58,7 @@ class Portfolio extends React.Component {
    render() {
        
       const portItems = this.props.data.map((item) =>
-         <PortItem key={item.key} id={item.key} url={item.url} title={item.title} desc={item.desc} thumb={item.thumb} tools={item.tools}/>
+         <PortItem ref={item.key} id={item.key} url={item.url} title={item.title} desc={item.desc} thumb={item.thumb} tools={item.tools}/>
       );
       return (
          <div className="Portfolio">

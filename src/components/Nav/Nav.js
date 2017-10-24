@@ -1,5 +1,5 @@
 import React from 'react';
-import TweenMax from 'gsap';
+import { TweenMax, Power2 } from 'gsap'
 import 'gsap/src/uncompressed/plugins/ScrollToPlugin';
 
 class Nav extends React.Component {
@@ -39,7 +39,7 @@ class Nav extends React.Component {
       console.log("navClick key = "+key);
       if(target === "_self") {
          e.preventDefault();
-         TweenMax.to(window, 1, {scrollTo:'.'+key});   
+         TweenMax.to(window, 1, {scrollTo:'.'+key, ease: Power2.easeInOut});   
       }
        
    }
