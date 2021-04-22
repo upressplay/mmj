@@ -3,6 +3,12 @@ import img from '../../img/skills.jpg';
 
 class Skills extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+       data: [],
+    };
+ }
   render() {
 
     return (
@@ -16,7 +22,7 @@ class Skills extends Component {
         	   </div>  
          </div>  
          <div className="SkillsDesc">
-         Photoshop, Illustrator, Premiere, Final Cut Pro, After Effects, Javascript, SASS, Git, Gulp, Grunt, Node.js, jQuery, JSON, Expression Engine, Wordpress, PHP, Unity3d, C#, ReactJS, ReactVR
+          {this.props.data}
          </div>
       </div>
     );

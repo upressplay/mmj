@@ -1,0 +1,66 @@
+.Overlay {
+	position: fixed;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	background-color: #000;
+	width:100vw;
+	height:0;
+	top:0;
+	left:0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out, height 0s ease-in-out 0.51s;
+	&.active {
+		transition: opacity 0.5s ease-in-out, height 0s ease-in-out ;
+
+		opacity:1;
+		height: 100vh;
+	}
+	.CloseBtn {
+		position:absolute;
+		top:0;
+		right:0;
+		cursor: pointer;
+		color: #fff;
+		font-family: 'SteelTongsRegular', sans-serif;
+		font-weight: 800;
+		text-align: center;
+
+		padding: 5vw;
+		font-size: 5vw;
+
+		transition: color 0.5s ease-in-out;
+
+		&:hover {
+			color:#333;
+		}
+
+		@include bp-medium {
+			padding: 3vw;
+			font-size: 3vw;
+		}
+	
+		@include bp-large {
+			padding:2vw;
+			font-size: 2vw;
+		}
+	}
+	.VidPlayer {
+		width:90vw;
+		height: 51vw;
+
+		@include bp-medium {
+			width:90vw;
+			height: 51vw;
+		}
+	
+		@include bp-large {
+			width:63vw;
+			height: 35vw;
+		}
+	}
+ }
+ 

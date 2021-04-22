@@ -49,7 +49,7 @@
          {  
            "key":"facebook",
            "title":"Facebook",
-           "link":"https://www.facebook.com/matthewmjones",
+           "link":"https://www.facebook.com/matthewmjonesportfolio",
            "target":"_blank",
            "class":"SocialBtn",
            "icon":"fa fa-facebook-square"
@@ -61,72 +61,255 @@
            "target":"_blank",
            "class":"SocialBtn",
            "icon":"fa fa-twitter-square"
+         },
+         {  
+           "key":"instagram",
+           "title":"Instagram",
+           "link":"https://instagram.com/galleryofinfamy",
+           "target":"_blank",
+           "class":"SocialBtn",
+           "icon":"fa fa-instagram"
+         }
+         ,
+         {  
+           "key":"youtube",
+           "title":"Youtube",
+           "link":"https://www.youtube.com/c/MatthewMJones/videos",
+           "target":"_blank",
+           "class":"SocialBtn",
+           "icon":"fa fa-youtube"
          }
         ]
     },
+    "skills":{
+        "key":"skills",
+        "desc":"React, Javascript(ES6), Webpack, Babel, SASS, Node.js, A-Frame, Git, Gulp, Drupal, Wordpress, PHP, Unity3d, C#, Photoshop, Illustrator, Premiere, After Effects, Sketch"
+    },
     "about":{
         "key":"about",
-        "desc":"Matthew was born and raised in Woodhaven, Michigan, 20 miles south of Detroit. He spent his days drawing comic book characters, creating haunted house tours through his friends basements and acting in the Woodhaven High School's theater program. Matthew attended Michigan State University earning a B.A. in Advertising, where he concentrated on graphic design and marketing. After graduation Matthew moved to Chicago, where he worked as a designer and developer.<br/><br/>In 1999, he entered the Film and Video Program at Columbia College in Chicago, where he graduated with honors. During that time he founded uPressplay, an interactive website for independent artists to showcase their films and videos. Matthew also produced many of his own work, which he also showcased in montly screenings. uPressplay became the launching pad for many successes including, Stay Dead, Two Days in Limbo, Palooka, Roscoe Village, Sour Krauts, The Art of Pain, Farewell Darkness and Camel Town: The Musical.<br/><br/>uPressplay has produced over 25 Official Film Festival Selections and winning Best Dramatic Short at the Michigan Independent and NY International Film Festivals for Two Days in Limbo. Best Feature Film at the Delray Beach and Drake International Film Festivals for Farewell Darkness. And Audience Choice Award at the Sunscreen Film Festival for The Art of Pain. The comedy musical short, Camel Town, was an official selection of the Sunscreen Film Festival and also won the Audience Choice Award at the Chicago International Reel Shorts Film Festival.<br/><br/>Matthew moved to Los Angeles in 2011, working in entertainment industry as a designer, developer and editor. He also has written 2 feature lenght scripts and has produced several web videos and short films. Recently he won a W3 Best of Show award for his work on the How to Train Your Dragon franchise site and online card game."
+        "desc":"Matthew has been working in the creative technology field for over 20 years. His work has included campaign development, web development, web and poster design, motion graphics and social media campaigns. He's produced 2 feature length films and 20 plus short films garnering over 25 Official Film Festival selections. His web work has won 3 W3 Awards, a FWA Site of the Day, Communication Arts and Pixel Award.<br/><br/>Campaigns he has worked on include Spiderman, Disney's Cars, How to Train Your Dragon, Kung Fu Panda, Lego Atlantis, Fast and the Furious and for over 5 years his Wheel of Fortune game was advertised before the show while being distributed in over a dozen different markets worldwide. One of his favorite career moments is when his website for The Fast and Furious was advertised during a Final Four Game that his Michigan State Spartans were playing in. <br/><br/>For the past 10 years Matthew has been curating a blog of photoshopped images based on pop culture and political satire called, The Gallery of Infamy. He has been taking his Gallery work into AR Effects on Instagram and Facebook pages. A highlight for the gallery is when Al Roker retweeted a Game of Thrones mash up Matthew designed commenting on the blizzard taking over the east coast. <br/><br/>For the past 3 years he has been hosting a Poster Design forum for the Kapow Intergalactic Film Festival where he also handles the fest's web and social media presence. Last year he directed and recorded a live reading of the Winner for Best Comedy Screenplay, Elvis vs Buddy. Which will be released as an Audiobook later this year.<br/><br/>He has an encyclopedia knowledge of movie trivia, which his parents said will never make him any money, yet it does. Give him a line to a movie, he will probably know it."
     },
     "portfolio":[
+        {
+            "key":"mmj-reel",
+            "type":["video","design"],
+            "title":"MATTHEW M. JONES MOTION GRAPHICS REEL",
+            "desc":"A variety of selects from my motion graphics work. Comprised of title design, opening credit sequences, trailers and social media videos.",
+            "url":"https://youtu.be/rfM5ML6sb70",
+            "tools":"After Effects, Premiere",
+            "thumb":"img/mmj_reel.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"kapow-trailer",
+            "type":["video","design"],
+            "title":"KAPOW VIRTUAL FILM FESTIVAL TRAILER",
+            "desc":"Animated the title sequence and edited the trailer for this year's virtual festival.",
+            "url":"https://www.youtube.com/watch?v=X1LKJtderQw",
+            "tools":"After Effects, Premiere",
+            "thumb":"img/kapow_trailer_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"bill-maher",
+            "type":["web"],
+            "title":"BILL MAHER'S WEBSITE",
+            "desc":"Bill needed a new website to promote his comedy tour. Custom schedule generator, multiple video categories, scrolling galleries and subtle site animations  .",
+            "url":"https://billmaher.com/",
+            "tools":"Wordpress, SASS, ES6, CSS3, Webpack, Babel",
+            "thumb":"img/bill_maher_website.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"edoross",
+            "type":["design","web"],
+            "title":"ED O'ROSS ACTOR'S SITE",
+            "desc":"Wordpress driven by my Production House theme. Customized fields allowing complete control of content delivery, regardless of category. All content is sharable driving Client's Google rankings.",
+            "url":"https://www.edoross.com/",
+            "tools":"Photoshop, UX, Wordpress, SASS, ES6, CSS3, Webpack, Babel",
+            "thumb":"img/edoross_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"suzannetill",
+            "type":["design","web"],
+            "title":"SUZANNE TILL FOR WATER BOARD",
+            "desc":"Wordpress site driven by my Production House theme. Customized fields allowing complete control of content delivery, regardless of category. All content is sharable driving Client's Google rankings.",
+            "url":"https://suzannetill.com/",
+            "tools":"Photoshop, UX, Wordpress, SASS, ES6, CSS3, Webpack, Babel",
+            "thumb":"img/suzannetill_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"suzannetillsign",
+            "type":["design"],
+            "title":"SUZANNE TILL FOR WATER BOARD LAWN SIGN",
+            "desc":"Logo design and print production for Suzanne's campaign. She's been the talk of the town, with many Santee citizens commenting on her sign.",
+            "url":"/port/st_lawn_sign.jpg",
+            "tools":"Photoshop",
+            "thumb":"img/st_lawnsign_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"nbcu",
+            "type":["web"],
+            "title":"NBC UNIVERSAL WEBSITE",
+            "desc":"Responsive site with custom animations for featured stories, featured brands and the over 100 year history of NBCUniversal's brand.",
+            "url":"https://www.nbcuniversal.com/",
+            "tools":"JS, SASS. Gulp, Node.js, Drupal",
+            "thumb":"img/nbcu_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"hoplite",
+            "type":["web","design"],
+            "title":"HOPLITE ENTERTAINMENT",
+            "desc":"Responsive site showcasing tv and movie properties of this LA based entertainment company. Custom animated homepage, showcase pages for shows, bio pages for team members and news articles for company press. Also created a Chinese version of the site via Wordpress Multisite.",
+            "url":"https://hoplitetvfilm.com/",
+            "tools":"Photoshop, Wordpress, JS, SASS. Gulp, Node.js",
+            "thumb":"img/hoplite_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"kapow",
+            "type":["web","design"],
+            "title":"KAPOW INTERGALLACTIC FILM FESTIVAL",
+            "desc":"Responsive site with custom programming schedule for the festival. Official Selection pages including photos, videos, posters, logine, social links and produciton information. SEO initiative to promote artists and the films they made.",
+            "url":"http://kapowiff.com/",
+            "tools":"Photoshop, Wordpress, JS, SASS. Gulp",
+            "thumb":"img/kapow_thumb.jpg",
+            "gallery":[]
+        },
+        
+        {
+            "key":"ff",
+            "type":["web"],
+            "title":"FAST AND FURIOUS SITE",
+            "desc":"Responsive site built dyanmically with json data integrating social media posts from the cast along with a timeline application covering the entire franchise.",
+            "url":"http://www.fastandfurious.com/",
+            "tools":"jQuery, JS, Tweenmax, SASS, Gulp, PHP, JSON",
+            "thumb":"img/ff_thumb.jpg",
+            "gallery":[]
+        },
         {
             "key":"thunderagents",
             "type":["web"],
             "title":"THUNDER AGENTS SITE",
             "desc":"Responsive site with dynamic scrolling functionality showcasing an upcoming franchise based on a series of comic books from the 60s.",
-            "url":"http://www.thunderagents.com/",
+            "url":"http://matthewmjones.com/port/thunderagents/",
             "tools":"jQuery, JS, Tweenmax, SASS. Gulp, JSON",
             "thumb":"img/thunderagents_thumb.jpg",
             "gallery":[]
         },
         {
-            "key":"livebynight",
-            "type":["web"],
-            "title":"LIVE BY NIGHT SITE",
-            "desc":"Responsive site with custom environmental animations for locations featured in the movie.",
-            "url":"http://www.livebynight.movie/",
-            "tools":"jQuery, JS, Tweenmax, SASS, Gulp, JSON",
-            "thumb":"img/livebynight_thumb.jpg",
+            "key":"fuzz",
+            "type":["video","design"],
+            "title":"FUZZ & MALLOY INTRO SEQUENCE",
+            "desc":"Animated intro sequence for a sketch comedy troup. Used still photos and found imagery, filtered via Photoshop for an illustrated look for background elements.",
+            "url":"https://www.youtube.com/watch?v=bcmGrwcIwhE",
+            "tools":"After Effects, Photo Retouching, Design",
+            "thumb":"img/fuzz_thumb.jpg",
             "gallery":[]
         },
         {
-            "key":"stx",
+            "key":"betheboss",
+            "type":["video"],
+            "title":"BE THE BOSS",
+            "desc":"Spot created for the Doritos Superbowl Ad contest. Co-wrote the script, designed the tshirt, ran the boom and co-edited. Frito Lay made a mistake passing on the Flavor Enforcer...",
+            "url":"https://www.youtube.com/watch?v=C_XBfewId6I",
+            "tools":"Writing, Editing, Producing",
+            "thumb":"img/betheboss_thumb.jpg",
+            "gallery":[]
+        },
+        
+        {
+            "key":"bookoffaces",
             "type":["web"],
-            "title":"STX ENTERTAINMENT SITE",
-            "desc":"Responsive site built dyanmically with json data. Using animated SVGS and Canvas elements to create a download light, animated experience.",
-            "url":"http://www.vacationthemovie.com/",
-            "tools":"Canvas, SVG, jQuery, JS, Tweenmax, SASS, Gulp, PHP, JSON",
-            "thumb":"img/stx_thumb.jpg",
+            "title":"BOOK OF FACES MOVIE SITE",
+            "desc":"Responsive site with paralax effect. Video, Photo and News galleries.",
+            "url":"http://bookoffacesmovie.com/",
+            "tools":"Wordpress, JS, SASS. Gulp",
+            "thumb":"img/bookoffaces_thumb.jpg",
             "gallery":[]
         },
         {
-            "key":"malala",
-            "type":["web"],
-            "title":"HE NAMED ME MALALA SITE",
-            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction. Showcasing the documentary about Nobel Peace Prize Laureate Malala Yousafzai.",
-            "url":"http://www.henamedmemalalamovie.com/",
-            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
-            "thumb":"img/malala_thumb.jpg",
+            "key":"chitone",
+            "type":["web","design"],
+            "title":"CHI-TONE RECORDS",
+            "desc":"Custom Wordpress site to promote multiple artists and bands. News, Gigs, Gear Sales and Podcast. Grid layout to allow custom thumbnail types.",
+            "url":"http://chi-tone.com/",
+            "tools":"Logo Design, Web Design, Wordpress, JS, SASS. Gulp",
+            "thumb":"img/chitown_thumb.jpg",
             "gallery":[]
         },
         {
-            "key":"vacation",
+            "key":"spiderman-website",
             "type":["web"],
-            "title":"VACATION SITE",
-            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction. Welcome to Wally World!",
-            "url":"http://www.vacationthemovie.com/",
-            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
-            "thumb":"img/vacation_thumb.jpg",
+            "title":"THE AMAZING SPIDER-MAN WEBSITE",
+            "desc":"This was my first major franchise website. Elaborate background animations, responsive scrolling and content viewing. Our url was on every billboard in Hollywood for a couple weeks. It was an honor to get a little Stan Lee in my portfolio. Translated and distributed in over a dozen countries world wide.",
+            "url":"https://youtu.be/RCpTcXwFdjY",
+            "tools":"Animation, Web Development",
+            "thumb":"img/spiderman_website.jpg",
             "gallery":[]
         },
         {
-            "key":"fcl",
+            "key":"robinhood-website",
             "type":["web"],
-            "title":"FIRST COMES LIKE SITE",
+            "title":"ROBIN HOOD WEBSITE",
+            "desc":"Experiential EPK site for Russel Crowe's Robin Hood. Featuring interactive story telling elements, gallery images, videos and an interactive history book. This project almost broke me. Deadline was a month. 15 hours a day. Had to take off a couple weeks after this one.",
+            "url":"https://youtu.be/YNxjSP8bloo",
+            "tools":"Animation, Web Development",
+            "thumb":"img/robinhood_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"runaways-website",
+            "type":["web"],
+            "title":"THE RUNAWAYS WEBSITE",
+            "desc":"Developed and animated this website for the origin story of Joan Jett and The Runaways. Started the project loving the song, Cherry Bomb. Now, not so much. Be careful what music you select, after you hear a 1000 times it no longer becomes your favorite. Still have a little PTSD every time it's played on the radio. ",
+            "url":"https://youtu.be/cM2MKKAbRuA",
+            "tools":"Animation, Web Development",
+            "thumb":"img/runaways_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"aop-website",
+            "type":["web","design"],
+            "title":"THE ART OF PAIN WEBSITE",
+            "desc":"This is the site I learned how to write Actionscript and Javascript. By reading programming books bought at Borders on the train heading downtown to and from work in Chicago.  Launched my Entertainment Marketing Career that spanned over a decade. Designed and animated the transitions and interactions for this Indie Comedy I produced and co-edited. Also title design and poster design.",
+            "url":"https://youtu.be/uUAoZYOC1RU",
+            "tools":"After Effects, Premiere, Photoshop",
+            "thumb":"img/aop_website_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"fd-website",
+            "type":["web","design"],
+            "title":"FAREWELL DARKNESS WEBSITE",
+            "desc":"This was probably the site that got me in the door doing Entertainment Marketing. 2nd major actionscript endeavor. Designed, developed and animated this website for one of the feature films I produced. People always ask, 'How did you get started?' My answer always, 'Make something.' And that's what we did. We made a movie, a poster, a website, photos, behind the scenes. Most importantly, we made some great work and some great memories.",
+            "url":"https://youtu.be/NHoUVLLYQJQ",
+            "tools":"After Effects, Premiere, Photoshop",
+            "thumb":"img/farewell_darkness_website.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"blackpumpkin",
+            "type":["design"],
+            "title":"BLACK PUMPKIN POSTER",
+            "desc":"Utilizing on screen grabs and web images designed this creepy poster for 2019 horror movie that premiered at the Kapow Intergallactic Film Festival.",
+            "url":"/port/blackpumpkin_poster.jpg",
+            "tools":"Art Direction, Design, Photo Retouching",
+            "thumb":"img/blackpumpkin_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"laughinghouse",
+            "type":["web"],
+            "title":"LAUGHING HOUSE PRODUCTIONS",
             "desc":"Responsive site utilizing Wordpress for content curation.",
-            "url":"http://firstcomeslikemovie.com/",
+            "url":"http://laughinghouseproductions.com/",
             "tools":"Design, UX, jQuery, JS, Tweenmax, CSS3, Wordpress",
-            "thumb":"img/fcl_thumb.jpg",
+            "thumb":"img/lhp_thumb.jpg",
             "gallery":[]
         },
         {
@@ -137,26 +320,6 @@
             "url":"http://danielguzman.net/",
             "tools":"Design, UX, jQuery, JS, Tweenmax, CSS3, Wordpress",
             "thumb":"img/guzman_thumb.jpg",
-            "gallery":[]
-        },
-        {
-            "key":"edoross",
-            "type":["design","web"],
-            "title":"ED O'ROSS ACTOR'S SITE",
-            "desc":"HTML5 website, with Expression Engine CMS for client controlled content.",
-            "url":"/port/spm_poster.jpg",
-            "tools":"Design, UX, Expression Engine, jQuery, JS, Tweenmax, CSS3",
-            "thumb":"img/edoross_thumb.jpg",
-            "gallery":[]
-        },
-        {
-            "key":"dirty-grandpa",
-            "type":["web"],
-            "title":"DIRTY GRANDPA SITE",
-            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction.",
-            "url":"http://www.dirtygrandpa.movie/",
-            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
-            "thumb":"img/dirtygrandpa_thumb.jpg",
             "gallery":[]
         },
         {
@@ -184,7 +347,7 @@
             "type":["web"],
             "title":"AFTER EARTH SITE",
             "desc":"Stylized animations, controlled by the users mouse wheel progress or tablet swiping, reveal characters and plot details. Along with links and information for the variety of content being released in support of this franchise. Functional on all modern browsers, Apple and Android devices.",
-            "url":"http://mcdickthemovie.com/",
+            "url":"/port/afterearth/",
             "tools":"Canvas, Javascript, jQuery, Tweenmax, CSS3",
             "thumb":"img/afterearth_thumb.jpg",
             "gallery":[]
@@ -205,43 +368,20 @@
             "type":["web"],
             "title":"BLACK SAILS",
             "desc":"CMS driven site with custom shareable content for 'Bloody Truths.' Interactive gallery with historical informaion on weapons, clothing and the life of a pirate.",
-            "url":"http://panandtilt.com/",
+            "url":"/port/black_sails/",
             "tools":"Wordpress, jQuery, Javascript, Tweenmax, CSS3",
             "thumb":"img/blacksails_thumb.jpg",
           
             "gallery":[]
         },
         {
-            "key":"dragons",
-            "type":["web","games"],
-            "title":"HOW TO TRAIN YOUR DRAGON FRANCHISE SITE",
-            "desc":"CMS driven site launched in over 40 different countries. Card collection game, detailed information on the characters, dragons and locations in the film.",
-            "url":"https://www.howtotrainyourdragon.com/",
-            "tools":"jQuery, Javascript, Tweenmax, CSS3, Expression Engine",
-            "thumb":"img/dragons_thumb.jpg",
-          
-            "gallery":[]
-        },
-        {
-            "key":"kungfupanda",
-            "type":["web","games"],
-            "title":"KUNG FU PANDA FRANCHISE SITE",
-            "desc":"CMS driven site launched in over 40 different countries. ",
-            "url":"https://www.howtotrainyourdragon.com/",
-            "tools":"jQuery, Javascript, Tweenmax, CSS3, Expression Engine",
-            "thumb":"img/kungfupanda_thumb.jpg",
-          
-            "gallery":[]
-        },
-        {
-            "key":"enders",
-            "type":["games"],
-            "title":"ENDERS GAME",
-            "desc":"Shooting gallery app simulating the training scenes in Enders Game.",
-            "url":"http://www.endersgamemovie.com/battleroomtraining/",
-            "tools":"jQuery, Javascript, Tweenmax, CSS3",
-            "thumb":"img/endergame_thumb.jpg",
-          
+            "key":"livebynight",
+            "type":["web"],
+            "title":"LIVE BY NIGHT SITE",
+            "desc":"Responsive site with custom environmental animations for locations featured in the movie.",
+            "url":"/port/livebynight",
+            "tools":"jQuery, JS, Tweenmax, SASS, Gulp, JSON",
+            "thumb":"img/livebynight_thumb.jpg",
             "gallery":[]
         },
         {
@@ -260,7 +400,7 @@
             "type":["games"],
             "title":"DINO DIG DISCOVERIES",
             "desc":"Desktop, Tablet and Mobile search game promoting the 3d movie, Walking with Dinosaurs. ",
-            "url":"http://matthewmjones.com/port/dinos",
+            "url":"http://matthewmjones.com/port/walkingdinos",
             "tools":"jQuery, Javascript, Tweenmax, CSS3",
             "thumb":"img/dinos_thumb.jpg",
           
@@ -277,14 +417,13 @@
           
             "gallery":[]
         },
-        
         {
             "key":"sorority",
             "type":["design"],
             "title":"SORORITY PARTY MASSACRE POSTER",
             "desc":"Art Directed photoshoot, outlined objects and created a series of blood graphics to simulate a table environment showcasing the movies's characters and plot points.",
             "url":"/port/spm_poster.jpg",
-            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "tools":"Art Direction, Design, Photo Retouching",
             "thumb":"img/sorority_thumb.jpg",
             "gallery":[]
         },
@@ -294,7 +433,7 @@
             "title":"HAUNTING IN MASSACHUSETTS POSTER",
             "desc":"'And it softly whispered, such horrible things.' Started with just green screen photos of the children, and built the rest of the environment with still and stock photos.",
             "url":"/port/haunting_poster.jpg",
-            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "tools":"Art Direction, Design, Photo Retouching",
             "thumb":"img/haunting_thumb.jpg",
             "gallery":[]
         },
@@ -304,7 +443,7 @@
             "title":"MIRROR IMAGE POSTER",
             "desc":"Using client supplied photography and stock imagery I built an ominous frame for the horror thriller 'Mirror Image.",
             "url":"/port/mirror_image_poster.jpg",
-            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "tools":"Art Direction, Design, Photo Retouching",
             "thumb":"img/mirror_thumb.jpg",
             "gallery":[]
         },

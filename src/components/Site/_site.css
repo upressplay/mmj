@@ -1,10 +1,10 @@
 .Site {
-  position: relative;
+   box-sizing: border-box;
   margin:0 auto ;
   overflow-x: hidden;
-  overflow-y: hidden;
-  width:100%;
-  height:100%;
+  overflow-y: auto;
+  width:100vw;
+  height:100vh;
   
   background-color: #000;
   padding-bottom: rem(30,$text-bp-sm);

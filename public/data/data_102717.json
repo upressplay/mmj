@@ -1,0 +1,363 @@
+{
+    "nav":{
+        "navBtns":[
+        {  
+           "key":"Skills",
+           "title":"SKILLS",
+           "link":"skills",
+           "target":"_self",
+           "class":"NavBtn"
+         },
+         {  
+           "key":"About",
+           "title":"ABOUT",
+           "link":"about",
+           "target":"_self",
+           "class":"NavBtn"
+         },
+         { 
+           "key":"Portfolio", 
+           "title":"PORTFOLIO",
+           "link":"portfolio",
+           "target":"_self",
+           "class":"NavBtn"
+         },
+         {  
+           "key":"Resume",
+           "title":"RESUME",
+           "link":"/mmj_resume.pdf",
+           "target":"_blank",
+           "class":"NavBtn"
+         },
+         {  
+           "key":"Contact",
+           "title":"CONTACT",
+           "link":"contact",
+           "target":"_self",
+           "class":"NavBtn"
+         }
+        ],
+        "socialBtns":[
+            {  
+           "key":"linkedin",
+           "title":"LinkedIn",
+           "link":"https://www.linkedin.com/in/matthew-m-jones-74862830/",
+           "target":"_blank",
+           "class":"SocialBtn",
+           "icon":"fa fa-linkedin-square"
+         },
+         {  
+           "key":"facebook",
+           "title":"Facebook",
+           "link":"https://www.facebook.com/matthewmjones",
+           "target":"_blank",
+           "class":"SocialBtn",
+           "icon":"fa fa-facebook-square"
+         },
+         {  
+           "key":"twitter",
+           "title":"Twitter",
+           "link":"https://twitter.com/upressplay",
+           "target":"_blank",
+           "class":"SocialBtn",
+           "icon":"fa fa-twitter-square"
+         }
+        ]
+    },
+    "about":{
+        "key":"about",
+        "desc":"Matthew was born and raised in Woodhaven, Michigan, 20 miles south of Detroit. He spent his days drawing comic book characters, creating haunted house tours through his friends basements and acting in the Woodhaven High School's theater program. Matthew attended Michigan State University earning a B.A. in Advertising, where he concentrated on graphic design and marketing. After graduation Matthew moved to Chicago, where he worked as a designer and developer.<br/><br/>In 1999, he entered the Film and Video Program at Columbia College in Chicago, where he graduated with honors. During that time he founded uPressplay, an interactive website for independent artists to showcase their films and videos. Matthew also produced many of his own work, which he also showcased in montly screenings. uPressplay became the launching pad for many successes including, Stay Dead, Two Days in Limbo, Palooka, Roscoe Village, Sour Krauts, The Art of Pain, Farewell Darkness and Camel Town: The Musical.<br/><br/>uPressplay has produced over 25 Official Film Festival Selections and winning Best Dramatic Short at the Michigan Independent and NY International Film Festivals for Two Days in Limbo. Best Feature Film at the Delray Beach and Drake International Film Festivals for Farewell Darkness. And Audience Choice Award at the Sunscreen Film Festival for The Art of Pain. The comedy musical short, Camel Town, was an official selection of the Sunscreen Film Festival and also won the Audience Choice Award at the Chicago International Reel Shorts Film Festival.<br/><br/>Matthew moved to Los Angeles in 2011, working in entertainment industry as a designer, developer and editor. He also has written 2 feature lenght scripts and has produced several web videos and short films. Recently he won a W3 Best of Show award for his work on the How to Train Your Dragon franchise site and online card game."
+    },
+    "portfolio":[
+        {
+            "key":"thunderagents",
+            "type":["web"],
+            "title":"THUNDER AGENTS SITE",
+            "desc":"Responsive site with dynamic scrolling functionality showcasing an upcoming franchise based on a series of comic books from the 60s.",
+            "url":"http://www.thunderagents.com/",
+            "tools":"jQuery, JS, Tweenmax, SASS. Gulp, JSON",
+            "thumb":"img/thunderagents_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"livebynight",
+            "type":["web"],
+            "title":"LIVE BY NIGHT SITE",
+            "desc":"Responsive site with custom environmental animations for locations featured in the movie.",
+            "url":"http://www.livebynight.movie/",
+            "tools":"jQuery, JS, Tweenmax, SASS, Gulp, JSON",
+            "thumb":"img/livebynight_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"stx",
+            "type":["web"],
+            "title":"STX ENTERTAINMENT SITE",
+            "desc":"Responsive site built dyanmically with json data. Using animated SVGS and Canvas elements to create a download light, animated experience.",
+            "url":"http://www.vacationthemovie.com/",
+            "tools":"Canvas, SVG, jQuery, JS, Tweenmax, SASS, Gulp, PHP, JSON",
+            "thumb":"img/stx_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"malala",
+            "type":["web"],
+            "title":"HE NAMED ME MALALA SITE",
+            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction. Showcasing the documentary about Nobel Peace Prize Laureate Malala Yousafzai.",
+            "url":"http://www.henamedmemalalamovie.com/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"img/malala_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"vacation",
+            "type":["web"],
+            "title":"VACATION SITE",
+            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction. Welcome to Wally World!",
+            "url":"http://www.vacationthemovie.com/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"img/vacation_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"fcl",
+            "type":["web"],
+            "title":"FIRST COMES LIKE SITE",
+            "desc":"Responsive site utilizing Wordpress for content curation.",
+            "url":"http://firstcomeslikemovie.com/",
+            "tools":"Design, UX, jQuery, JS, Tweenmax, CSS3, Wordpress",
+            "thumb":"img/fcl_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"guzman",
+            "type":["web"],
+            "title":"DANIEL GUZMAN ACTOR'S SITE",
+            "desc":"Responsive site utilizing Wordpress for content curation.",
+            "url":"http://danielguzman.net/",
+            "tools":"Design, UX, jQuery, JS, Tweenmax, CSS3, Wordpress",
+            "thumb":"img/guzman_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"edoross",
+            "type":["design","web"],
+            "title":"ED O'ROSS ACTOR'S SITE",
+            "desc":"HTML5 website, with Expression Engine CMS for client controlled content.",
+            "url":"/port/spm_poster.jpg",
+            "tools":"Design, UX, Expression Engine, jQuery, JS, Tweenmax, CSS3",
+            "thumb":"img/edoross_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"dirty-grandpa",
+            "type":["web"],
+            "title":"DIRTY GRANDPA SITE",
+            "desc":"Responsive site utilizing Tumblr's api, pulling posts from the main Tumblr feed and dynamically loading based on user interaction.",
+            "url":"http://www.dirtygrandpa.movie/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"img/dirtygrandpa_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"mcdick",
+            "type":["web", "design"],
+            "title":"MCDICK SITE",
+            "desc":"CMS driven responsive site with dynamically loading drawers for site content. Urls and social sharing dynamically generated for single page section navigation and SEO.",
+            "url":"http://mcdickthemovie.com/",
+            "tools":"UX, jQuery, JS, Tweenmax, CSS3, Tumblr",
+            "thumb":"img/mcdick_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"alvh",
+            "type":["web"],
+            "title":"ABRAHAM LINCOLN VAMPIRE HUNTER",
+            "desc":"In promotion of the theatrical release of the sci-fi horror feature, Abraham Lincoln Vampire Hunter, we were commissioned to build an html5 based motion comic. Translated into over 10 different languages.",
+            "url":"http://matthewmjones.com/port/alvh/",
+            "tools":"Canvas, Javascript, jQuery, CSS3",
+            "thumb":"img/alvh_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"afterearth",
+            "type":["web"],
+            "title":"AFTER EARTH SITE",
+            "desc":"Stylized animations, controlled by the users mouse wheel progress or tablet swiping, reveal characters and plot details. Along with links and information for the variety of content being released in support of this franchise. Functional on all modern browsers, Apple and Android devices.",
+            "url":"http://mcdickthemovie.com/",
+            "tools":"Canvas, Javascript, jQuery, Tweenmax, CSS3",
+            "thumb":"img/afterearth_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"pan",
+            "type":["web", "design"],
+            "title":"PAN & TILT SITE",
+            "desc":"CMS driven responsive site with dynamically loading drawers for site content. Urls and social sharing dynamically generated for single page section navigation and SEO.",
+            "url":"http://panandtilt.com/",
+            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "thumb":"img/pan_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"blacksails",
+            "type":["web"],
+            "title":"BLACK SAILS",
+            "desc":"CMS driven site with custom shareable content for 'Bloody Truths.' Interactive gallery with historical informaion on weapons, clothing and the life of a pirate.",
+            "url":"http://panandtilt.com/",
+            "tools":"Wordpress, jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/blacksails_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"dragons",
+            "type":["web","games"],
+            "title":"HOW TO TRAIN YOUR DRAGON FRANCHISE SITE",
+            "desc":"CMS driven site launched in over 40 different countries. Card collection game, detailed information on the characters, dragons and locations in the film.",
+            "url":"https://www.howtotrainyourdragon.com/",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3, Expression Engine",
+            "thumb":"img/dragons_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"kungfupanda",
+            "type":["web","games"],
+            "title":"KUNG FU PANDA FRANCHISE SITE",
+            "desc":"CMS driven site launched in over 40 different countries. ",
+            "url":"https://www.howtotrainyourdragon.com/",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3, Expression Engine",
+            "thumb":"img/kungfupanda_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"enders",
+            "type":["games"],
+            "title":"ENDERS GAME",
+            "desc":"Shooting gallery app simulating the training scenes in Enders Game.",
+            "url":"http://www.endersgamemovie.com/battleroomtraining/",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/endergame_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"insidious2",
+            "type":["games"],
+            "title":"INSIDIOUS 2 SEANCE GAME",
+            "desc":"Game created to promote the horror film Insidious Chapter 2. Ask the Further a question, and witness your fate. Compatible on iPad and Android Tablets.",
+            "url":"http://matthewmjones.com/port/insidious2/",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/insidious2_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"dinos",
+            "type":["games"],
+            "title":"DINO DIG DISCOVERIES",
+            "desc":"Desktop, Tablet and Mobile search game promoting the 3d movie, Walking with Dinosaurs. ",
+            "url":"http://matthewmjones.com/port/dinos",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/dinos_thumb.jpg",
+          
+            "gallery":[]
+        },
+        {
+            "key":"wof",
+            "type":["games"],
+            "title":"WHEEL OF FORTUNE TOSS UP GAME",
+            "desc":"Timer based game simulating the final game from the show. Distributed to over 10 different markets and languages.",
+            "url":"http://www.wheeloffortune.com/so-many-ways-to-play/toss-up-challenge/",
+            "tools":"jQuery, Javascript, Tweenmax, CSS3",
+            "thumb":"img/wof_thumb.jpg",
+          
+            "gallery":[]
+        },
+        
+        {
+            "key":"sorority",
+            "type":["design"],
+            "title":"SORORITY PARTY MASSACRE POSTER",
+            "desc":"Art Directed photoshoot, outlined objects and created a series of blood graphics to simulate a table environment showcasing the movies's characters and plot points.",
+            "url":"/port/spm_poster.jpg",
+            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "thumb":"img/sorority_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"haunting",
+            "type":["design"],
+            "title":"HAUNTING IN MASSACHUSETTS POSTER",
+            "desc":"'And it softly whispered, such horrible things.' Started with just green screen photos of the children, and built the rest of the environment with still and stock photos.",
+            "url":"/port/haunting_poster.jpg",
+            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "thumb":"img/haunting_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"mirror",
+            "type":["design"],
+            "title":"MIRROR IMAGE POSTER",
+            "desc":"Using client supplied photography and stock imagery I built an ominous frame for the horror thriller 'Mirror Image.",
+            "url":"/port/mirror_image_poster.jpg",
+            "tools":"Design, UX, Wordpress, jQuery, JS, Tweenmax, CSS3",
+            "thumb":"img/mirror_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"threetimes",
+            "type":["design"],
+            "title":"THREE TIMES A LADY POSTER",
+            "desc":"Utilizing original photography and photo retouching to create this poster.",
+            "url":"/port/ttal_poster.jpg",
+            "tools":"Art Direction, Design, Photo Retouching",
+            "thumb":"img/threetimes_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"iwhd",
+            "type":["design"],
+            "title":"I WANT HIM DEAD POSTER",
+            "desc":"Combining a large assortment of photography, I designed an environment for this poster, where the main character of the film has gone around town and graffitied the signs featuring her model ex-boyfriend.",
+            "url":"/port/iwhd_poster.jpg",
+            "tools":"Design, Photo Retouching, Still Photography",
+            "thumb":"img/iwhd_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"aop",
+            "type":["design"],
+            "title":"THE ART OF PAIN POSTER",
+            "desc":"Utilizing original photography and photo retouching to create this poster for a Kung Fu / Horror Film.",
+            "url":"/port/aop_poster.jpg",
+            "tools":"Art Direction, Design, Photo Retouching",
+            "thumb":"img/aop_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"fd",
+            "type":["design"],
+            "title":"FAREWELL DARKNESS POSTER",
+            "desc":"Utilizing original photography and photo retouching to create this poster for this award winning Dramatic Film.",
+            "url":"/port/fd_poster.jpg",
+            "tools":"Art Direction, Design, Photo Retouching",
+            "thumb":"img/fd_thumb.jpg",
+            "gallery":[]
+        },
+        {
+            "key":"car",
+            "type":["design"],
+            "title":"CAR POSTER",
+            "desc":"Poster design for an upcoming Movie about a group of gritty street kids, fighting for survival in a world wrought with drugs, sex and violence.",
+            "url":"/port/car_poster_concept.jpg",
+            "tools":"Art Direction, Design, Photo Retouching",
+            "thumb":"img/car_thumb.jpg",
+            "gallery":[]
+        }
+          
+    ]
+}

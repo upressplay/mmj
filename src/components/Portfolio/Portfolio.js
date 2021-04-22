@@ -1,16 +1,20 @@
 import React from 'react';
 import img from '../../img/portfolio.jpg';
 import TweenMax from 'gsap';
+import Overlay from '../../components/Overlay/Overlay.js';
 
 class Portfolio extends React.Component {
    
    constructor(props){
       super(props) 
       this.state = {
-         data: props
+         data: props,
+         overlayUrl: 'https://www.youtube.com/watch?v=bcmGrwcIwhE',
+         overlayClass: ''
       };
       console.log("Portfolio "+this.state.data);
-
+      this.openOverlay = this.openOverlay.bind(this);
+      this.closeOverlay = this.closeOverlay.bind(this);
    }
    componentDidMount() {
 
@@ -55,10 +59,29 @@ class Portfolio extends React.Component {
 
    }
 
+   openOverlay(url) {
+      console.log('openOverlay '+url);
+      this.setState({
+         overlayClass: 'active'
+       });
+       this.setState({
+         overlayUrl : url
+       });
+   }
+   closeOverlay() {
+      console.log('closeOverlay ');
+      this.setState({
+         overlayClass: ''
+       });
+       this.setState({
+         overlayUrl : ''
+       });
+   }
+
    render() {
        
-      const portItems = this.props.data.map((item) =>
-         <PortItem ref={item.key} id={item.key} url={item.url} title={item.title} desc={item.desc} thumb={item.thumb} tools={item.tools}/>
+      const portItems = this.props.data.map((item, i) =>
+         <PortItem click={this.openOverlay} key={item.key} id={item.key} url={item.url} title={item.title} desc={item.desc} thumb={item.thumb} tools={item.tools}/>
       );
       return (
          <div className="Portfolio">
@@ -79,7 +102,7 @@ class Portfolio extends React.Component {
                         GAMES
                      </div>
                      <div className="PortfolioBtn" onClick={() => { this.sort('vr') }}>
-                        VR
+                        AR
                      </div>
                      <div className="PortfolioBtn" onClick={() => { this.sort('design') }}>
                         DESIGN
@@ -93,30 +116,52 @@ class Portfolio extends React.Component {
             <div className="PortfolioContent">
                {portItems}
              </div>
+             <Overlay url={this.state.overlayUrl} class={this.state.overlayClass} close={this.closeOverlay}/>
          </div>
       );
    }
 }
 
+
 function PortItem(props) {
-   return (
-      <a href={props.url} target="_blank">
-         <div id={props.id} className="PortItem">
-            <img src={props.thumb} alt={props.title}/>
-            <div className="PortInfo">
-               <div className="PortTitle">
-                  {props.title}
-               </div>
-               <div className="PortDesc">
-                  {props.desc}
-               </div>
-               <div className="PortTools">
-                  {props.tools}
+   if(props.url.includes('youtu')) {
+      return (
+            <div id={props.id} className="PortItem" onClick={ () => { props.click(props.url) }}>
+               <img src={props.thumb} alt={props.title}/>
+               <div className="PortInfo">
+                  <h2 className="PortTitle">
+                     {props.title}
+                  </h2>
+                  <div className="PortDesc">
+                     {props.desc}
+                  </div>
+                  <div className="PortTools">
+                     {props.tools}
+                  </div>
                </div>
             </div>
-         </div>
-      </a>
-    );
+       );
+   } else {
+      return (
+         <a href={props.url} target="_blank" rel="noopener noreferrer">
+            <div id={props.id} className="PortItem">
+               <img src={props.thumb} alt={props.title}/>
+               <div className="PortInfo">
+                  <h2 className="PortTitle">
+                     {props.title}
+                  </h2>
+                  <div className="PortDesc">
+                     {props.desc}
+                  </div>
+                  <div className="PortTools">
+                     {props.tools}
+                  </div>
+               </div>
+            </div>
+         </a>
+       );   
+   }
+   
 }
 
 export default Portfolio;
